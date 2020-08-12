@@ -1,0 +1,18 @@
+.btn--white{
+    @include text($color-gray-4,$fs-0,$fw-bold-0);
+    @include button($color-white-0,$color-gray-4,$pd-1 + 1,$pd-1 + 2);
+    &:hover{
+        @include text($color-black-0,$fs-0,$fw-bold-0);
+        @include button($color-white-0,$color-black-0,$pd-1 + 1,$pd-1 + 2);
+        
+    }
+}
+.btn--purple{
+    @include text($color-white-0,$fs-0,$fw-bold-0);
+    @include button($color-red-0,$color-red-0,$pd-1 + 1,$pd-1 + 2);
+    &:hover{
+        @include text($color-white-0,$fs-0,$fw-bold-0);
+        @include button($color-red-1,$color-red-1,$pd-1 + 1,$pd-1 + 2);
+        
+    }
+}

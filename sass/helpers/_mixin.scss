@@ -1,0 +1,67 @@
+@mixin text($color,$fs,$fw){
+    color:$color;
+    font-size:$fs;
+    font-weight:$fw;
+}
+
+@mixin button($bg-color,$border-color,$pd-top-bottom,$pd-right-left) {
+    // color:$color ;
+    background-color:$bg-color ;
+    border:1px solid $border-color;
+    padding:$pd-top-bottom $pd-right-left;
+}
+
+@mixin  inputSearch($bg-color,$bg-color-focus,$border-color-focus) {
+    form{
+        background-color:$bg-color;
+        border-radius: $border-radius;
+        .form-control{
+            background-color: transparent;
+            border-color: transparent;
+            transition: none;
+            &:focus{
+                background-color:$bg-color-focus;
+                border-color: $border-color-focus;
+                border-right-color: transparent;
+                box-shadow: none;
+            }
+            &:focus+.input-group-append{
+                .input-group-text{
+                    background-color:$bg-color-focus;
+                    border-color:$border-color-focus ;
+                    border-left-color: transparent;
+                    &:hover{
+                        background-color: $color-red-0;
+                       color: $color-white-0;
+                    }
+                }
+            }
+        }
+        .input-group-append{
+            .input-group-text{
+                background-color: transparent;
+                border-color: transparent;
+                color: $color-red-0;
+                transition: none;
+                &:hover{
+                    background-color: $color-red-0;
+                   color: $color-white-0;
+                }
+            }
+        }
+    }
+}
+
+
+//screen = extra-large, large,medium,small
+@mixin mediaQuery($screen){
+    @if map-has-key($map: $breakpoints, $key: $screen ){
+        $value: map-get($map: $breakpoints , $key: $screen );
+        @media screen and (max-width:$value) {
+            @content;
+        }
+    }
+    @else{
+        @warn "`#{$screen}`khong ton tai";
+    }
+}
