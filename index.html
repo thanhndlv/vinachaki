@@ -32,24 +32,19 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link" href="#">HOME <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Dropdown
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Action</a>
-                            <a class="dropdown-item" href="#">Another action</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                            <a class="nav-link" href="#">WHY CHOOSE US?</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link disabled" href="#">Disabled</a>
+                            <a class="nav-link" href="#">PRODUCTS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">FAQ</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT US</a>
                         </li>
                     </ul>
                 </div>
@@ -144,7 +139,7 @@
                     </div>
                 </div>
 
-                <a href="" class="btn btn-block">Why choose us?</a>
+                <a href="" class="btn btn-block btn-orange">Why choose us?</a>
 
             </div>
         </section>
@@ -155,9 +150,9 @@
             <div class="container">
                 <div class="index_sectionCategoryWrap">
                     <div class="index_sectionCategory_content">
-                        <h2 class="index_sectionCategory_ContentTitle">VinaChaki<br>Products</h2>
-                        <p class="index_sectionCategory_ContentDesc">A charcoal kingdom</p>
-
+                        <h2 class="index_sectionCategory_contentTitle"><span>VinaChaki<br>Products</span></h2>
+                        <p class="index_sectionCategory_contentDesc">A charcoal kingdom</p>
+                        <a class="btn btn-block btn-gray">Detail</a>
                     </div>
                     <div class="index_sectionCategory_categogy">
                         <div class="index_sectionCategory_categogyItem">
@@ -284,8 +279,8 @@
                     </div>
                     <div class="index_sectionAboutUs_content">
                         <h2 class="index_sectionAboutUs_contentTitle">About us</h2>
-                        <p class="index_sectionAboutUs_contentDesc">Check out what we do in this video</p>
-                        <a href="" class="btn">Download Company Profile</a>
+                        <p class="index_sectionAboutUs_contentDesc">Check out what we do<br>in this video</p>
+                        <a href="" class="btn btn-block btn-white">Download Company Profile</a>
                     </div>
                 </div>
             </div>
@@ -296,22 +291,29 @@
                 <div class="sectionGen_contactWrap">
                     <div class="sectionGen_contactForm">
                         <h2 class="sectionGen_contactFormTitle">Contact us</h2>
-                        <div class="sectionGen_contactFormDesc">Feel free to contact us any time. We will get back to you as soon as we can!</div>
+                        <p class="sectionGen_contactFormDesc">Feel free to contact us any time. We will get back to you as<br>soon as we can!</p>
                         <form id="contact">
-
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="contactName" aria-describedby="contactName" placeholder="Name">
+                            <div class="d-flex">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="contactName">
+                                    <span class="form-group-txt-hover">Name</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" id="contactPhone">
+                                    <span class="form-group-txt-hover">Phone</span>
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" id="contactEmail">
+                                    <span class="form-group-txt-hover">Email address</span>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="contactPhone" placeholder="Phone">
+                            <div class="d-flex">
+                                <div class="form-group">
+                                    <textarea id="textarea" rows="3" id="contactMessage"></textarea>
+                                    <span class="form-group-txt-hover">Message</span>
+                                </div>
+                                <button type="submit" class="btn btn-block btn-orange">SENT NOW</button>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" id="contactEmail" placeholder="Email address">
-                            </div>
-                            <div class="form-group">
-                                <textarea id="textarea" rows="3" id="contactMessage" placeholder="Message"></textarea>
-                            </div>
-                            <button type="submit" class="btn btn-primary">SENT NOW</button>
                           </form>
                     </div>
                     <div class="sectionGen_contactIntroduce">
@@ -352,7 +354,72 @@
         </section>
 
         <footer class="footer" id="footer">
-            
+            <div class="container">
+                <div class="footerWrap">
+                    <div class="footer_logo">
+                        <div class="footer_logoImg">
+                            <img src="assets/images/index/logo_footer.png" alt="">
+                        </div>
+                        <p class="footer_logoDesc">We are charcoal manufacturer, charcoal<br>distributor and charcoal exporter. We are one of<br>leading exporters of wood charcoal in Viet Nam.<br>We supply charcoal for barbecue (BBQ), charcoal<br> for Shisha, charcoal for industrial applications.</p>
+                    </div>
+                    <div class="footer_menu">
+                        <div class="footer_menuItem">
+                            <ul>
+                                <li>
+                                    <a href="">product</a>
+                                    <ul>
+                                        <li><a href="">White charcoal</a></li>
+                                        <li><a href="">Hardwood charcoal</a></li>
+                                        <li><a href="">Softwood charcoal</a></li>
+                                        <li><a href="">Mix wood charcoal</a></li>
+                                        <li><a href="">Coconut charcoal</a></li>
+                                        <li><a href="">Sawduct charcoal</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_menuItem">
+                            <ul>
+                                <li>
+                                    <a href="">help</a>
+                                    <ul>
+                                        <li><a href="">Customer support</a></li>
+                                        <li><a href="">Contact</a></li>
+                                        <li><a href="">FAQ</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_menuItem">
+                            <ul>
+                                <li>
+                                    <a href="">social</a>
+                                    <ul>
+                                        <li><a href="">Gmail</a></li>
+                                        <li><a href="">Facebook</a></li>
+                                        <li><a href="">Softwood charcoal</a></li>
+                                        <li><a href="">Instagram</a></li>
+                                        <li><a href="">Tik Tok</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer_menuItem">
+                            <ul>
+                                <li>
+                                    <a href="">legal</a>
+                                    <ul>
+                                        <li><a href="">Tearms of use</a></li>
+                                        <li><a href="">Privacy policy</a></li>
+                                        <li><a href="">Legal notice</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">VinaChaki 2020 Copyright Reserved ( VINACHAKI CO.,LTD)</div>
+            </div>
         </footer>
 
     </main>
