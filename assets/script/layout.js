@@ -5,36 +5,38 @@ locationPage = locationHref.replace(locationOrigin,''),
 locationPageFolder = folderName != '' ? locationPage.replace('/'+folderName+'/','') : '';
 arrayHref = locationPageFolder == '' ? 0 : locationPageFolder.split('/'),
 linkHref = '';
+
 for(var i = 0; i < arrayHref.length - 1 ; i++){
     linkHref = linkHref + '../';
 }
 
-var header = `<nav class="navbar navbar-expand-lg">
-<div class="container">
-    <a class="navbar-logo" href="#"><img src="`+linkHref+`assets/images/index/logo.png" alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="`+linkHref+`">HOME <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="`+linkHref+`">WHY CHOOSE US?</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="`+linkHref+`products/">PRODUCTS</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="`+linkHref+`faq.html">FAQ</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="`+linkHref+`contact.html">CONTACT US</a>
-            </li>
-        </ul>
+var header = `
+<nav class="navbar navbar-expand-lg">
+    <div class="container">
+        <a class="navbar-logo" href="#"><img src="`+linkHref+`assets/images/index/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="`+linkHref+`index.html">HOME <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="`+linkHref+`why-choose-us.html">WHY CHOOSE US?</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="`+linkHref+`products/index.html">PRODUCTS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="`+linkHref+`faq.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="`+linkHref+`contact.html">CONTACT US</a>
+                </li>
+            </ul>
+        </div>
     </div>
-</div>
 </nav>`,
 
 
@@ -69,7 +71,7 @@ footer = `
                         <a href="`+linkHref+`">help</a>
                         <ul>
                             <li><a href="`+linkHref+`">Customer support</a></li>
-                            <li><a href="`+linkHref+`">Contact</a></li>
+                            <li><a href="`+linkHref+`contact.html">Contact</a></li>
                             <li><a href="`+linkHref+`faq.html">FAQ</a></li>
                         </ul>
                     </li>
@@ -106,6 +108,74 @@ footer = `
     <div class="copyright">VinaChaki 2020 Copyright Reserved ( VINACHAKI CO.,LTD)</div>
 </div>`;
 
+var contact = `
+<div class="container">
+    <div class="sectionGen_contactWrap">
+        <div class="sectionGen_contactForm">
+            <h2 class="sectionGen_contactFormTitle">Contact us</h2>
+            <p class="sectionGen_contactFormDesc">Feel free to contact us any time. We will get back to you as<br>soon as we can!</p>
+            <form id="contact">
+                <div class="d-flex">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="contactName">
+                        <span class="form-group-txt-hover">Name</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="contactPhone">
+                        <span class="form-group-txt-hover">Phone</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="contactEmail">
+                        <span class="form-group-txt-hover">Email address</span>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <div class="form-group">
+                        <textarea id="textarea" rows="3" id="contactMessage"></textarea>
+                        <span class="form-group-txt-hover">Message</span>
+                    </div>
+                    <button type="submit" class="btn btn-block btn-orange">SENT NOW</button>
+                </div>
+              </form>
+        </div>
+        <div class="sectionGen_contactIntroduce">
+            <h2 class="sectionGen_contactIntroduceTitle">VinaChaki Co., LTD</h2>
+            <div class="sectionGen_contactIntroduceItem">
+                <div class="sectionGen_contactIntroduceItemIcon">
+                    <img src="`+linkHref+`assets/images/index/ic_location.png" alt="">
+                </div>
+                <p>111/13 Tran Huu Trang, Ward 10,<br>Phu Nhuan Dist., Ho Chi Minh City, Viet Nam</p>
+            </div>
+            <div class="sectionGen_contactIntroduceItem">
+                <div class="sectionGen_contactIntroduceItemIcon">
+                    <a href="tel:+84868601809"><img src="`+linkHref+`assets/images/index/ic_phone.png" alt=""></a>
+                </div>
+                <p><a href="tel:+84868601809">(+84) 86 860 1809</a></p>
+            </div>
+            <div class="sectionGen_contactIntroduceItem">
+                <div class="sectionGen_contactIntroduceItemIcon">
+                    <a href="mailto:vinachaki@gmail.com"><img src="`+linkHref+`assets/images/index/ic_mail.png" alt=""></a>
+                </div>
+                <p><a href="mailto:vinachaki@gmail.com">vinachaki@gmail.com</a></p>
+            </div>
+            <div class="sectionGen_contactIntroduceItem">
+                <div class="sectionGen_contactIntroduceItemIcon">
+                    <a href="www.facebook.com/vinachaki"><img src="`+linkHref+`assets/images/index/ic_fb.png" alt=""></a>
+                </div>
+                <p><a href="www.facebook.com/vinachaki">www.facebook.com/vinachaki</a></p>
+            </div>
+            <div class="sectionGen_contactIntroduceItem">
+                <div class="sectionGen_contactIntroduceItemIcon">
+                    <a href="www.instagram/vinachaki"><img src="`+linkHref+`assets/images/index/ic_instagram.png" alt=""></a>
+                </div>
+                <p><a href="www.instagram/vinachaki">www.instagram/vinachaki</a></p>
+            </div>
+        </div>
+    </div>
+</div>`;
+
 $('#layout-header').html(header);
+
+$('#layout-contact').html(contact);
 
 $('#layout-footer').html(footer);
