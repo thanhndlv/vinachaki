@@ -45,7 +45,8 @@
     }
 }
 .productRecom{
-    padding: 4vw 0  ;
+    padding: 4vw 0;
+    background-color: #E4E4E4;
     h2{
         font-size: 5rem;
         text-align: center;
@@ -71,4 +72,166 @@
     }
 
 }
+.headerProductDetails{
+    padding-top: 18.95vh;
+    background-color: #F4F4F4;
+    .headerProductDetailsBoxLeft{
+        width: 39.27vw;
+        .headerProductDetails_video{
+            width: 39.27vw;
+        }
+        .headerProductDetails_info{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .list {
+                width: 20.83vw;
+                text-align: center;
+                margin: 14.73vh auto 9.473vh;
+                padding: 0  ;
+                display: flex;
+                justify-content: space-between;
+                align-items: top;
+                li {
+                    width: 5.785vw;
+                    display: inline-block;
+                    list-style: none;
+                }
+            }
+                
+        }
+    }
+    .headerProductDetailsBoxRight{
+        width: 43.75vw;
+            .headerProductDetailsBoxRight_intro{
+                .headerProductDetailsBoxRight_introText{
+                    z-index: 2;
+                    position: relative;
+                    .headerProductDetailsBoxRight_introTitle{
+                        font-size: 7.1875vw;
+                        padding-left: 8.854vw;
+                        text-indent: -8.854vw;
+                        line-height: 1;
+                    }
+                    .text{
+                        font-size: 1.825vw;
+                        color: #616467;   
+                        width: 33.8541vw;
+                        line-height: 1.285;
+                        padding-left: 6.25vw;
+                    }
+                }
+                .headerProductDetailsBoxRight_boxImg{
+                    width: 20.15625vw;
+                    height: 19.375vw;
+                    border: solid 6px #D13A17;
+                    z-index: 1;
+                    position: relative;
+                    margin-top: -12.25vw;
+                    margin-left: 1.5625vw;
+                    .icon{
+                        padding: 1.5625vw 0 0 1.041vw;
+                        width: 3.4375vw;
+                        height: 3.125vw;
+                    }
+
+                }
+         }
+    }
+           
+}
+.headerProductKind{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    .headerProductKindLeft{
+        width: 52.1825vw;
+        margin: 0 3.125vw 0 7vw;
+        padding: 5.723vw 0;
+        .headerProductKindLeft_box{
+            padding: 0 1.5625vw 0 1.5625vw;
+            border: solid 6px #D13A17;
+            .headerProductKindLeft_title{
+                font-size: 3.6458vw;
+                line-height: 1;
+                margin: 1.3vw 0;
+            }
+            .headerProductKindLeft_text{
+                font-size: 1.5625vw;
+                color: #65686B;
+                line-height: 1.5;
+                letter-spacing: -1px;
+            }
+        }
+        
+    }
+    .headerProductKindRight{
+        width: 36.71875vw;
+    }
+}
+.contentWoods{
+    padding: 6.25vw 0 3.646vw 0;
+    background-color: #F4F4F4;
+    display: flex;
+    flex-direction: row;
+    .contentWoodsTitle{
+        font-size: 4.16vw;
+        line-height: 1;
+        margin-bottom: 3.125vw;
+    }
+    .contentWoodsBox{
+        position: relative;
+        margin-bottom: 1.823vw;
+        .contentWoodsLeft{
+            display: flex;
+            flex-direction: column;
+            width: 51.82vw;
+            height: 24.635vw;
+            border: solid 0.3125vw #D13A17;
+            padding: 1.823vw;
+            position: relative;
+            z-index: 1;
+            margin-bottom: 3.125vw;
+            .contentWoodsLeftTitle{
+                font-size: 3.6458vw;
+            }
+            .text{
+                font-size: 1.5625vw;
+                color: #24282D;
+            }
+            .btnDetail{
+                font-size:1.1458vw;
+                width:  13.54vw;
+                border: solid 6px #D13A17;
+                text-align: center;
+                padding: 1.042vw;
+                color: #D13A17;
+                font-weight: bold;
+                text-decoration: none;
+                position: absolute;
+                right: 14.0625vw;
+                bottom: 2.864vw;
+            }
+        }
+        .contentWoodsLeft.fix{
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+        .contentWoodsRight{
+            position: absolute;
+            z-index: 2;
+            right: 0;
+            top: 0;
+            width: 36.04vw;
+            height: 22.55vw;
+        }
+        .contentWoodsRight.fix{
+            left: 0;
+            position: relative;
+            
+        }
+    }
     
+}
