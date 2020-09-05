@@ -22,7 +22,7 @@ a{
     display: block;
 }
 .font-poppins{
-    font-family: Poppins!important;
+    font-family: 'Poppins';
 }
 
 .fz100{
@@ -151,6 +151,7 @@ header{
     border-width: .2vw;
     padding: 1.7vw 1.5vw;
     line-height: 1;
+    font-size: 1.3vw;
 }
 .btn-orange{
     border-color: #E8160D;
@@ -698,6 +699,7 @@ footer{
 
 .wcu_section1{
     padding: 7vw 0 2vw;
+    background: #F4F4F4;
     .wcu_section1Wrap{
         display: flex;
         justify-content: space-between;
@@ -719,6 +721,7 @@ footer{
 .wcu_section2{
     position: relative;
     padding: 15vw 0 10vw;
+    background: #F4F4F4;
     .container{
         position: relative;
     }
@@ -787,6 +790,7 @@ footer{
 }
 .wcu_section3{
     padding: 0 0 10vw;
+    background: #F4F4F4;
     .wcu_section3List{
         display: flex;
         flex-wrap: wrap;
@@ -845,6 +849,8 @@ footer{
 }
 
 .wcu_section4{
+    background: #F4F4F4;
+    padding: 0 0 3vw;
     .wcu_section4Title{
         font-size: 4.4vw;
         font-weight: 500;
@@ -854,6 +860,82 @@ footer{
     }
 }
 
+.wcu_section4{
+    .wcu_section4ListSub{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        &:before{
+            content:"";
+            left: 0;
+            right: -3vw;
+            height: 0.52vw;
+            position: absolute; 
+            background: #C72E09;
+            bottom: 6vw;
+            z-index: 0;
+        }
+        &:nth-child(2):after{
+            content: "";
+            top: -6vw;
+            right: -3vw;
+            width: 0.52vw;
+            position: absolute;
+            background: #C72E09;
+            bottom: 6vw;
+            z-index: 0;
+        }
+        &:nth-child(2):before{
+            left: -3vw;
+        }
+        &:nth-child(3):after{
+            content: "";
+            top: -6vw;
+            left: -3vw;
+            width: 0.52vw;
+            position: absolute;
+            background: #C72E09;
+            bottom: 6vw;
+            z-index: 0;
+        }
+        &:nth-child(3):before{
+            left: -3vw;
+        }
+        &.wcu_section4ListSubLast{
+            &:before{
+                right: 20vw;
+            }
+        }
+    }
+    .wcu_section4ListItem{
+        flex: 0 0 27%;
+        max-width: 27%;
+        margin: 0 0 4vw;
+        position: relative;
+    }
+    .wcu_section4ListItemImg{
+        margin: 0 0 1vw;
+    }
+    .wcu_section4ListItemTitle{
+        font-size: 0.8vw;
+        color: #24282D;
+        min-height: 3vw;
+        margin: 0 0 2vw;
+        font-weight: 500;
+    }
+    .wcu_section4ListItemNum{
+        font-size: 2.4vw;
+        width: 4.3vw;
+        height: 4.3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: -webkit-gradient(linear, right top, left bottom, from(#f1730c), to(#e8120c));
+        background: linear-gradient(to left bottom, #f1730c 0%, #e8120c 100%);
+        border-radius: 50%;
+        color: #fff;
+    }
+}
 
 
 /* end why choose us */
