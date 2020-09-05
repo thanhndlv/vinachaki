@@ -44,20 +44,21 @@
   }
 }
 .productRecom {
-  padding: 4vw 0;
+  padding: 7.2vw 0;
   background-color: #e4e4e4;
   h2 {
-    font-size: 5rem;
+    font-size: 4vw;
     text-align: center;
-    margin-bottom: 2vw;
+    margin-bottom: 5.5vw;
   }
   .boxInfo {
-    max-width: 456px;
-    margin: 0 auto;
+    flex: 0 0 28%;
+    max-width: 28%;
+    margin: 0 6.8vw 0 0;
     text-align: center;
     background-color: #24282d;
     padding: 0;
-    border-bottom: 25px solid #60666e;
+    border-bottom: 1.1vw solid #60666e;
     img {
       width: 100%;
     }
@@ -65,8 +66,14 @@
       margin: 1vw 0 3vw 0;
       color: #ffffff;
       h4 {
-        font-size: 2.25rem;
+        font-size: 1.8vw;
       }
+    }
+    &:last-child{
+      margin: 0;
+    }
+    a{
+      color: #fff;
     }
   }
 }
