@@ -2,7 +2,7 @@ var locationHref = location.href,
 locationOrigin = location.origin,
 folderName = 'vinachaki-html',
 locationPage = locationHref.replace(locationOrigin,''),
-locationPageFolder = folderName != '' ? locationPage.replace('/'+folderName+'/','') : '';
+locationPageFolder = folderName != '' ? locationPage.replace('/'+folderName+'/','') : locationPage;
 arrayHref = locationPageFolder == '' ? 0 : locationPageFolder.split('/'),
 linkHref = '';
 
@@ -15,8 +15,10 @@ var header = `
     <div class="container">
         <a class="navbar-logo" href="#"><img src="`+linkHref+`assets/images/index/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg></span>
+            
         </button>
+        
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
@@ -26,7 +28,7 @@ var header = `
                     <a class="nav-link" href="`+linkHref+`why-choose-us.html">WHY CHOOSE US?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="`+linkHref+`products/index.html">PRODUCTS</a>
+                    <a class="nav-link" href="`+linkHref+`products/our-product.html">PRODUCTS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="`+linkHref+`faq.html">FAQ</a>
@@ -53,7 +55,7 @@ footer = `
             <div class="footer_menuItem">
                 <ul>
                     <li>
-                        <a href="`+linkHref+`products/">product</a>
+                        <a href="`+linkHref+`products/our-product.html">product</a>
                         <ul>
                             <li><a href="`+linkHref+`products/white-charcoal.html">White charcoal</a></li>
                             <li><a href="`+linkHref+`">Hardwood charcoal</a></li>
@@ -131,7 +133,7 @@ var contact = `
                 </div>
                 <div class="d-flex">
                     <div class="form-group">
-                        <textarea id="textarea" rows="3" id="contactMessage"></textarea>
+                        <textarea maxlength="120" id="textarea" rows="3" id="contactMessage"></textarea>
                         <span class="form-group-txt-hover">Message</span>
                     </div>
                     <button type="submit" class="btn btn-block btn-orange">SENT NOW</button>
@@ -174,8 +176,52 @@ var contact = `
     </div>
 </div>`;
 
-$('#layout-header').html(header);
+var ourProduct = `
+<div class="container"> 
+    <h2>Our charcoal products </h2>
+    <div class="row">
+        <div class="col-4 boxInfo">
+            <div class="boxImg">
+                <a href="product/hardwood-charcoal.html"><img src="assets/images/contact/product1.jpg" alt=""></a>
+                
+            </div>
+            <div class="boxText">
+                <a href="product/hardwood-charcoal.html"><h4>Hardwood Charcoal</h4></a>
+            </div>
+        </div>
+        <div class="col-4 boxInfo">
+            <div class="boxImg">
+                <a href="product/softwood-charcoal.html"><img src="assets/images/contact/product2.jpg" alt=""></a>
+            </div>
+            <div class="boxText">
+                <a href="product/softwood-charcoal.html"><h4>Softwood Charcoal</h4></a>
+            </div>
+        </div>
+        <div class="col-4 boxInfo">
+            <div class="boxImg">
+                <a href="product/mixed-wood-harcoal.html"><img src="assets/images/contact/product3.jpg" alt=""></a>
+            </div>
+            <div class="boxText">
+                <a href="product/mixed-wood-harcoal.html"><h4>Mixed wood Charcoal</h4></a>
+            </div>
+        </div>
+    </div>
+</div>
+`;
 
-$('#layout-contact').html(contact);
+if($('#layout-header').length > 0){
+    $('#layout-header').html(header);
+}
 
-$('#layout-footer').html(footer);
+if($('#layout-contact').length > 0){
+    $('#layout-contact').html(contact);
+}
+
+if($('#layout-footer').length > 0){
+    $('#layout-footer').html(footer);
+}
+
+if($('#layout-ourProduct').length > 0){
+    $('#layout-ourProduct').html(ourProduct);
+}
+

@@ -2,6 +2,29 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(../../assets/fonts/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../../assets/fonts/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../../assets/fonts/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+a{
+    display: block;
+}
+.font-poppins{
+    font-family: 'Poppins';
+}
+
 .fz100{
     font-size: 100px;
 }
@@ -128,6 +151,7 @@ header{
     border-width: .2vw;
     padding: 1.7vw 1.5vw;
     line-height: 1;
+    font-size: 1.3vw;
 }
 .btn-orange{
     border-color: #E8160D;
@@ -152,14 +176,24 @@ header{
     .form-group-txt-hover{
         position: absolute;
         left: 2.1vw;
-        top: 1.8vw;
+        top: 50%;
         transition: .5s;
         color: #878B94;
+        transform: translateY(-50%);
+        background: #fff;
+        right: 2.1vw;
+        
     }
-    input:hover,textarea:hover,input:focus,textarea:focus{
-        & + .form-group-txt-hover{
+    textarea + .form-group-txt-hover{
+        top: 1.8vw;    
+        transform: none;
+        bottom: 0.4vw;
+    }
+    &:hover{
+        .form-group-txt-hover{
             top: 0.8vw;
             font-size: 0.6vw;
+            bottom: auto;
         }
     }
 }
@@ -525,6 +559,8 @@ footer{
     }
 }
 
+/* contact */
+
 .contact_sectionContact{
     padding: 0;
     position: relative;
@@ -556,11 +592,15 @@ footer{
         }
         .form-group input[type="text"], .form-group input[type="email"]{
             height: 3.4vw;
+            padding: 0 1vw;
+            font-size: 0.7vw;
         }
         .form-group textarea{
             height: 8.3vw;
             min-height: 8.3vw;
             max-height: 8.3vw;
+            padding: 1.6vw 1vw;
+            font-size: 0.7vw;
         }
         
         .form-group{
@@ -574,5 +614,343 @@ footer{
             font-size: 3vw;
             color: #fff;
         }
+    }
+    .form-group .form-group-txt-hover{
+        font-size: 0.7vw;
+        left: 1vw;
+        background: #24282D;
+    }
+    .form-group input{
+        font-size: 0.7vw;
+    }
+    .form-group:hover .form-group-txt-hover{
+        font-size: 0.4vw;
+    }
+    .form-group textarea+.form-group-txt-hover{
+        top: 1.6vw;
+    }
+    .form-group:hover .form-group-txt-hover{
+        top: 0.8vw;
+    }
+}
+
+.contact_sectionQuick{
+    padding: 3.75vw 0 7.9vw;
+    background: #F4F4F4;
+    .contact_sectionQuickTitle{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .contact_sectionQuickDesc{
+        font-weight: 100;
+        font-size: 0.8vw;
+    }
+    .contact_sectionQuick_quickSupportList{
+        display: flex;
+        .contact_sectionQuick_quickSupportListItem{
+            border: 1px solid #24282D;
+            padding: 2vw 1vw;
+            margin: 0 1vw 0 0;
+            width: 13.5vw;
+            border-radius: .5vw;
+        }
+        .contact_sectionQuick_quickSupportListItemIcon{
+            width: 1.3vw;
+            margin: 0 0 1vw;
+        }
+        .contact_sectionQuick_quickSupportListItemTitle{
+            font-size: 1vw;
+            min-height: 3vw;
+            margin: 0 0 1vw;
+        }
+        .contact_sectionQuick_quickSupportListItemDesc{
+            font-size: 0.8vw;
+            margin: 0;
+        }
+    }
+    .sectionGen_contact .sectionGen_contactForm .form-group{
+        width: 13.5vw;
+        margin: 0 1vw 0 0;
+        input{
+            height: 3.4vw;
+        }
+    }
+    .btn-block{
+        margin: 1vw 0 0;
+        width: 28vw;
+        padding: 0.9vw 1.5vw;
+    }
+    .form-group .form-group-txt-hover{
+        font-size: 0.7vw;
+    }
+    .form-group input{
+        font-size: 0.7vw;
+    }
+    .form-group:hover .form-group-txt-hover{
+        font-size: 0.4vw;
+    }
+    .sectionGen_contact .sectionGen_contactForm .form-group input[type="text"], .sectionGen_contact .sectionGen_contactForm .form-group input[type="email"]{
+        padding: 0 1vw;
+    }
+}
+/* end contact */
+
+/* why choose us */
+
+.wcu_section1{
+    padding: 7vw 0 2vw;
+    background: #F4F4F4;
+    .wcu_section1Wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    .wcu_section1Img{
+        width: 43vw;
+    }
+    .wcu_section1Content{
+        width: 28vw;
+    }
+    .wcu_section1ContentTitle{
+        font-size: 3vw;
+        font-weight: 600;
+        margin: 0 0 3vw;
+        
+    }
+}
+
+.wcu_section2{
+    position: relative;
+    padding: 15vw 0 10vw;
+    background: #F4F4F4;
+    .container{
+        position: relative;
+    }
+    .wcu_section2Img{
+        width: 62vw;
+        position: absolute;
+        right: 9.9vw;
+        top: -3.5vw;
+    }
+    .wcu_section2Content{
+        position: relative;
+        width: 33vw;
+        color: #24282D;
+    }
+    .wcu_section2ContentTitle{
+        font-size: 4vw;
+        font-weight: 600;
+        position: relative;
+        margin: 0 0 3vw;
+        
+        span{
+            position: relative;
+        }
+        &:before{
+            content: "";
+            background: url(../images/why_choose_us/s2_bg_tit.png) no-repeat;
+            width: 27.7vw;
+            height: 59.5vw;
+            position: absolute;
+            background-size: 100%;
+            z-index: 0;
+            left: -12.2vw;
+            top: -16vw;
+        }
+    }
+    .wcu_section2ContentDesc{
+        position: relative;
+        font-size: 1vw;
+        font-weight: bold;
+        margin: 0 0 8vw;
+    }
+    .wcu_section2ContentList{
+        position: relative;
+        display: flex;
+        background: #3C4149;
+        border-radius: 0.7vw;
+        padding: 1vw 0;
+        img{
+            height: 2.4vw;
+            width: auto;
+        }
+        .wcu_section2ContentListItem{
+            margin: 0 1vw;
+            position: relative;
+            cursor: pointer;
+            &:before{
+                content:"";
+                position: absolute;
+                border-right: 0.05vw solid #24282D;
+                right: -1vw;
+                top: -0.3vw;
+                bottom: -0.3vw;
+            }
+        }
+    }
+}
+.wcu_section3{
+    padding: 0 0 10vw;
+    background: #F4F4F4;
+    .wcu_section3List{
+        display: flex;
+        flex-wrap: wrap;
+        width: 45vw;
+        position: relative;
+        z-index: 1;
+        justify-content: space-between;
+        .wcu_section3ListItem{
+            margin: 0 0 1.45vw;
+            background: #3C4149;
+            border-radius: 2vw;
+            color: #fff;
+            text-align: center;
+            width: 21.8vw;
+            padding: 2vw 0;
+        }
+        .wcu_section3ListItemTitle{
+            font-size: 2vw;
+            font-weight: bold;
+            margin: 0 0 1vw;
+        }
+        .wcu_section3ListItemDesc{
+            color: #878B94;
+            font-size: 0.8vw;
+            padding: 0 5vw;
+        }
+        .wcu_section3ListItemImg{
+            min-height: 12vw;
+        }
+        
+    }
+    .wcu_section3Wrap{
+        display: flex;
+        align-items: center;
+    }
+    .wcu_section3Title{
+        font-size: 4.4vw;
+        font-weight: 500;
+        margin: 0 0 0 3.7vw;
+        position: relative;
+        line-height: 1;
+        span{
+            position: relative;
+        }
+        &::before{
+            content:"";
+            position: absolute;
+            width: 66vw;
+            height: 78.6vw;
+            background: url(../../assets/images/why_choose_us/s3_bg_title.png) no-repeat;
+            background-size: 100%;
+            right: -17vw;
+            top: -17vw;
+        }
+    }
+}
+
+.wcu_section4{
+    background: #F4F4F4;
+    padding: 0 0 3vw;
+    .wcu_section4Title{
+        font-size: 4.4vw;
+        font-weight: 500;
+        position: relative;
+        line-height: 1;
+        margin: 0 0 6vw;
+    }
+}
+
+.wcu_section4{
+    .wcu_section4ListSub{
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        &:before{
+            content:"";
+            left: 0;
+            right: -3vw;
+            height: 0.52vw;
+            position: absolute; 
+            background: #C72E09;
+            bottom: 6vw;
+            z-index: 0;
+        }
+        &:nth-child(2):after{
+            content: "";
+            top: -6vw;
+            right: -3vw;
+            width: 0.52vw;
+            position: absolute;
+            background: #C72E09;
+            bottom: 6vw;
+            z-index: 0;
+        }
+        &:nth-child(2):before{
+            left: -3vw;
+        }
+        &:nth-child(3):after{
+            content: "";
+            top: -6vw;
+            left: -3vw;
+            width: 0.52vw;
+            position: absolute;
+            background: #C72E09;
+            bottom: 6vw;
+            z-index: 0;
+        }
+        &:nth-child(3):before{
+            left: -3vw;
+        }
+        &.wcu_section4ListSubLast{
+            &:before{
+                right: 20vw;
+            }
+        }
+    }
+    .wcu_section4ListItem{
+        flex: 0 0 27%;
+        max-width: 27%;
+        margin: 0 0 4vw;
+        position: relative;
+    }
+    .wcu_section4ListItemImg{
+        margin: 0 0 1vw;
+    }
+    .wcu_section4ListItemTitle{
+        font-size: 0.8vw;
+        color: #24282D;
+        min-height: 3vw;
+        margin: 0 0 2vw;
+        font-weight: 500;
+    }
+    .wcu_section4ListItemNum{
+        font-size: 2.4vw;
+        width: 4.3vw;
+        height: 4.3vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: -webkit-gradient(linear, right top, left bottom, from(#f1730c), to(#e8120c));
+        background: linear-gradient(to left bottom, #f1730c 0%, #e8120c 100%);
+        border-radius: 50%;
+        color: #fff;
+    }
+}
+
+
+/* end why choose us */
+
+.icon-say{
+    position: relative;
+    &:before{
+        content:"";
+        background: url(../../assets/images/why_choose_us/s1_ic.png) no-repeat;
+        width: 5vw;
+        height: 4vw;
+        position: absolute;
+        background-size: 100%;
+        z-index: -1;
+        top: -2.3vw;
+        left: -2.6vw;
     }
 }
