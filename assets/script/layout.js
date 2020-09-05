@@ -2,7 +2,7 @@ var locationHref = location.href,
 locationOrigin = location.origin,
 folderName = 'vinachaki-html',
 locationPage = locationHref.replace(locationOrigin,''),
-locationPageFolder = folderName != '' ? locationPage.replace('/'+folderName+'/','') : '';
+locationPageFolder = folderName != '' ? locationPage.replace('/'+folderName+'/','') : locationPage;
 arrayHref = locationPageFolder == '' ? 0 : locationPageFolder.split('/'),
 linkHref = '';
 
@@ -26,7 +26,7 @@ var header = `
                     <a class="nav-link" href="`+linkHref+`why-choose-us.html">WHY CHOOSE US?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="`+linkHref+`products/index.html">PRODUCTS</a>
+                    <a class="nav-link" href="`+linkHref+`products/our-product.html">PRODUCTS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="`+linkHref+`faq.html">FAQ</a>
@@ -53,7 +53,7 @@ footer = `
             <div class="footer_menuItem">
                 <ul>
                     <li>
-                        <a href="`+linkHref+`products/">product</a>
+                        <a href="`+linkHref+`products/our-product.html">product</a>
                         <ul>
                             <li><a href="`+linkHref+`products/white-charcoal.html">White charcoal</a></li>
                             <li><a href="`+linkHref+`">Hardwood charcoal</a></li>
