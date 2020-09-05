@@ -2,6 +2,15 @@ body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
 }
+
+@font-face {
+    font-family: Poppins;
+    src: url(../../assets/fonts/Poppins-Regular.ttf);
+}
+.font-poppins{
+    font-family: Poppins;
+}
+
 .fz100{
     font-size: 100px;
 }
@@ -152,12 +161,18 @@ header{
     .form-group-txt-hover{
         position: absolute;
         left: 2.1vw;
-        top: 1.8vw;
+        top: 50%;
         transition: .5s;
         color: #878B94;
+        transform: translateY(-50%);
+        background: #fff;
+        right: 1vw;
     }
-    input:hover,textarea:hover,input:focus,textarea:focus{
-        & + .form-group-txt-hover{
+    textarea + .form-group-txt-hover{
+        top: 2.8vw;
+    }
+    &:hover{
+        .form-group-txt-hover{
             top: 0.8vw;
             font-size: 0.6vw;
         }
@@ -556,11 +571,15 @@ footer{
         }
         .form-group input[type="text"], .form-group input[type="email"]{
             height: 3.4vw;
+            padding: 0 1vw;
+            font-size: 0.7vw;
         }
         .form-group textarea{
             height: 8.3vw;
             min-height: 8.3vw;
             max-height: 8.3vw;
+            padding: 1vw;
+            font-size: 0.7vw;
         }
         
         .form-group{
@@ -574,5 +593,83 @@ footer{
             font-size: 3vw;
             color: #fff;
         }
+    }
+    .form-group .form-group-txt-hover{
+        font-size: 0.7vw;
+        left: 1vw;
+        background: #24282D;
+    }
+    .form-group input{
+        font-size: 0.7vw;
+    }
+    .form-group:hover .form-group-txt-hover{
+        font-size: 0.4vw;
+    }
+    .form-group textarea+.form-group-txt-hover{
+        top: 1.6vw;
+    }
+    .form-group:hover .form-group-txt-hover{
+        top: 0.8vw;
+    }
+}
+
+.contact_sectionQuick{
+    padding: 3.75vw 0 7.9vw;
+    background: #F4F4F4;
+    .contact_sectionQuickTitle{
+        font-size: 3vw;
+        font-weight: 600;
+    }
+    .contact_sectionQuickDesc{
+        font-weight: 100;
+        font-size: 0.8vw;
+    }
+    .contact_sectionQuick_quickSupportList{
+        display: flex;
+        .contact_sectionQuick_quickSupportListItem{
+            border: 1px solid #24282D;
+            padding: 2vw 1vw;
+            margin: 0 1vw 0 0;
+            width: 13.5vw;
+            border-radius: .5vw;
+        }
+        .contact_sectionQuick_quickSupportListItemIcon{
+            width: 1.3vw;
+            margin: 0 0 1vw;
+        }
+        .contact_sectionQuick_quickSupportListItemTitle{
+            font-size: 1vw;
+            min-height: 3vw;
+            margin: 0 0 1vw;
+        }
+        .contact_sectionQuick_quickSupportListItemDesc{
+            font-size: 0.8vw;
+            margin: 0;
+        }
+    }
+    .sectionGen_contact .sectionGen_contactForm .form-group{
+        width: 13.5vw;
+        margin: 0 1vw 0 0;
+        input{
+            height: 3.4vw;
+        }
+    }
+    .btn-block{
+        margin: 1vw 0 0;
+        width: 28vw;
+        padding: 0.9vw 1.5vw;
+    }
+    .form-group .form-group-txt-hover{
+        font-size: 0.7vw;
+        left: 1vw;
+    }
+    .form-group input{
+        font-size: 0.7vw;
+    }
+    .form-group:hover .form-group-txt-hover{
+        font-size: 0.4vw;
+    }
+    .sectionGen_contact .sectionGen_contactForm .form-group input[type="text"], .sectionGen_contact .sectionGen_contactForm .form-group input[type="email"]{
+        padding: 0 1vw;
     }
 }
