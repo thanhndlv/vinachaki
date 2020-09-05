@@ -4,11 +4,25 @@ body{
 }
 
 @font-face {
-    font-family: Poppins;
+    font-family: 'Poppins';
     src: url(../../assets/fonts/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../../assets/fonts/Poppins-Medium.ttf);
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Poppins';
+    src: url(../../assets/fonts/Poppins-Bold.ttf);
+    font-weight: bold;
+}
+a{
+    display: block;
 }
 .font-poppins{
-    font-family: Poppins;
+    font-family: Poppins!important;
 }
 
 .fz100{
@@ -166,15 +180,19 @@ header{
         color: #878B94;
         transform: translateY(-50%);
         background: #fff;
-        right: 1vw;
+        right: 2.1vw;
+        
     }
     textarea + .form-group-txt-hover{
-        top: 2.8vw;
+        top: 1.8vw;    
+        transform: none;
+        bottom: 0.4vw;
     }
     &:hover{
         .form-group-txt-hover{
             top: 0.8vw;
             font-size: 0.6vw;
+            bottom: auto;
         }
     }
 }
@@ -540,6 +558,8 @@ footer{
     }
 }
 
+/* contact */
+
 .contact_sectionContact{
     padding: 0;
     position: relative;
@@ -578,7 +598,7 @@ footer{
             height: 8.3vw;
             min-height: 8.3vw;
             max-height: 8.3vw;
-            padding: 1vw;
+            padding: 1.6vw 1vw;
             font-size: 0.7vw;
         }
         
@@ -661,7 +681,6 @@ footer{
     }
     .form-group .form-group-txt-hover{
         font-size: 0.7vw;
-        left: 1vw;
     }
     .form-group input{
         font-size: 0.7vw;
@@ -671,5 +690,185 @@ footer{
     }
     .sectionGen_contact .sectionGen_contactForm .form-group input[type="text"], .sectionGen_contact .sectionGen_contactForm .form-group input[type="email"]{
         padding: 0 1vw;
+    }
+}
+/* end contact */
+
+/* why choose us */
+
+.wcu_section1{
+    padding: 7vw 0 2vw;
+    .wcu_section1Wrap{
+        display: flex;
+        justify-content: space-between;
+    }
+    .wcu_section1Img{
+        width: 43vw;
+    }
+    .wcu_section1Content{
+        width: 28vw;
+    }
+    .wcu_section1ContentTitle{
+        font-size: 3vw;
+        font-weight: 600;
+        margin: 0 0 3vw;
+        
+    }
+}
+
+.wcu_section2{
+    position: relative;
+    padding: 15vw 0 10vw;
+    .container{
+        position: relative;
+    }
+    .wcu_section2Img{
+        width: 62vw;
+        position: absolute;
+        right: 9.9vw;
+        top: -3.5vw;
+    }
+    .wcu_section2Content{
+        position: relative;
+        width: 33vw;
+        color: #24282D;
+    }
+    .wcu_section2ContentTitle{
+        font-size: 4vw;
+        font-weight: 600;
+        position: relative;
+        margin: 0 0 3vw;
+        
+        span{
+            position: relative;
+        }
+        &:before{
+            content: "";
+            background: url(../images/why_choose_us/s2_bg_tit.png) no-repeat;
+            width: 27.7vw;
+            height: 59.5vw;
+            position: absolute;
+            background-size: 100%;
+            z-index: 0;
+            left: -12.2vw;
+            top: -16vw;
+        }
+    }
+    .wcu_section2ContentDesc{
+        position: relative;
+        font-size: 1vw;
+        font-weight: bold;
+        margin: 0 0 8vw;
+    }
+    .wcu_section2ContentList{
+        position: relative;
+        display: flex;
+        background: #3C4149;
+        border-radius: 0.7vw;
+        padding: 1vw 0;
+        img{
+            height: 2.4vw;
+            width: auto;
+        }
+        .wcu_section2ContentListItem{
+            margin: 0 1vw;
+            position: relative;
+            cursor: pointer;
+            &:before{
+                content:"";
+                position: absolute;
+                border-right: 0.05vw solid #24282D;
+                right: -1vw;
+                top: -0.3vw;
+                bottom: -0.3vw;
+            }
+        }
+    }
+}
+.wcu_section3{
+    padding: 0 0 10vw;
+    .wcu_section3List{
+        display: flex;
+        flex-wrap: wrap;
+        width: 45vw;
+        position: relative;
+        z-index: 1;
+        justify-content: space-between;
+        .wcu_section3ListItem{
+            margin: 0 0 1.45vw;
+            background: #3C4149;
+            border-radius: 2vw;
+            color: #fff;
+            text-align: center;
+            width: 21.8vw;
+            padding: 2vw 0;
+        }
+        .wcu_section3ListItemTitle{
+            font-size: 2vw;
+            font-weight: bold;
+            margin: 0 0 1vw;
+        }
+        .wcu_section3ListItemDesc{
+            color: #878B94;
+            font-size: 0.8vw;
+            padding: 0 5vw;
+        }
+        .wcu_section3ListItemImg{
+            min-height: 12vw;
+        }
+        
+    }
+    .wcu_section3Wrap{
+        display: flex;
+        align-items: center;
+    }
+    .wcu_section3Title{
+        font-size: 4.4vw;
+        font-weight: 500;
+        margin: 0 0 0 3.7vw;
+        position: relative;
+        line-height: 1;
+        span{
+            position: relative;
+        }
+        &::before{
+            content:"";
+            position: absolute;
+            width: 66vw;
+            height: 78.6vw;
+            background: url(../../assets/images/why_choose_us/s3_bg_title.png) no-repeat;
+            background-size: 100%;
+            right: -17vw;
+            top: -17vw;
+        }
+    }
+}
+
+.wcu_section4{
+    .wcu_section4Title{
+        font-size: 4.4vw;
+        font-weight: 500;
+        position: relative;
+        line-height: 1;
+        margin: 0 0 6vw;
+    }
+}
+
+
+
+/* end why choose us */
+
+.icon-say{
+    position: relative;
+    &:before{
+        content:"";
+        background: url(../../assets/images/why_choose_us/s1_ic.png) no-repeat;
+        width: 5vw;
+        height: 4vw;
+        position: absolute;
+        background-size: 100%;
+        z-index: -1;
+        top: -2.3vw;
+        left: -2.6vw;
     }
 }

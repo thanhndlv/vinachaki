@@ -131,7 +131,7 @@ var contact = `
                 </div>
                 <div class="d-flex">
                     <div class="form-group">
-                        <textarea id="textarea" rows="3" id="contactMessage"></textarea>
+                        <textarea maxlength="120" id="textarea" rows="3" id="contactMessage"></textarea>
                         <span class="form-group-txt-hover">Message</span>
                     </div>
                     <button type="submit" class="btn btn-block btn-orange">SENT NOW</button>
@@ -174,8 +174,52 @@ var contact = `
     </div>
 </div>`;
 
-$('#layout-header').html(header);
+var ourProduct = `
+<div class="container"> 
+    <h2>Our charcoal products </h2>
+    <div class="row">
+        <div class="col-4 boxInfo">
+            <div class="boxImg">
+                <a href="product/hardwood-charcoal.html"><img src="assets/images/contact/product1.jpg" alt=""></a>
+                
+            </div>
+            <div class="boxText">
+                <a href="product/hardwood-charcoal.html"><h4>Hardwood Charcoal</h4></a>
+            </div>
+        </div>
+        <div class="col-4 boxInfo">
+            <div class="boxImg">
+                <a href="product/softwood-charcoal.html"><img src="assets/images/contact/product2.jpg" alt=""></a>
+            </div>
+            <div class="boxText">
+                <a href="product/softwood-charcoal.html"><h4>Softwood Charcoal</h4></a>
+            </div>
+        </div>
+        <div class="col-4 boxInfo">
+            <div class="boxImg">
+                <a href="product/mixed-wood-harcoal.html"><img src="assets/images/contact/product3.jpg" alt=""></a>
+            </div>
+            <div class="boxText">
+                <a href="product/mixed-wood-harcoal.html"><h4>Mixed wood Charcoal</h4></a>
+            </div>
+        </div>
+    </div>
+</div>
+`;
 
-$('#layout-contact').html(contact);
+if($('#layout-header').length > 0){
+    $('#layout-header').html(header);
+}
 
-$('#layout-footer').html(footer);
+if($('#layout-contact').length > 0){
+    $('#layout-contact').html(contact);
+}
+
+if($('#layout-footer').length > 0){
+    $('#layout-footer').html(footer);
+}
+
+if($('#layout-ourProduct').length > 0){
+    $('#layout-ourProduct').html(ourProduct);
+}
+
