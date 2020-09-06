@@ -208,13 +208,27 @@ header{
 }
 
 .index_sectionSlide{
-
-    background: url(../images/index/bg_slide.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
     padding: 7.3vw 0 12vw;
+    position: relative;
+    .container{
+        position: relative;
+        z-index: 1;
+    }
+    .index_sectionSlide_bg{
+        clip: rect(0, auto, auto, 0);
+        margin-bottom: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        img{
+            position: fixed;
+            top: 0;
+            height: 100vh;
+            object-fit: cover;
+        }
+    }
 
     .index_sectionSlide_intro{
         color: #fff;
@@ -777,7 +791,7 @@ footer{
             margin: 0 1vw;
             position: relative;
             cursor: pointer;
-            &:before{
+            &:not(:last-child):before{
                 content:"";
                 position: absolute;
                 border-right: 0.05vw solid #24282D;
