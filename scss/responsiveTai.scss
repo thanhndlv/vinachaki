@@ -4,7 +4,7 @@
 header .navbar .navbar-nav{
     font-size: inherit;
 }
-h1{
+h1,h1 span{
     font-size: 2.5rem!important;
     line-height: 1!important;
 }
@@ -19,7 +19,8 @@ h2 span,h2,
 }
 
 p,span,.btn_txtChange,.btn_bestsell,.btn-block,
-footer .footer_menu .footer_menuItem ul a{
+footer .footer_menu .footer_menuItem ul a,
+h3{
     font-size: 1rem!important;
     line-height: 1.5!important;
 }
@@ -431,4 +432,25 @@ footer .footer_menu .footer_menuItem ul ul a{
 .contact_sectionQuick{
     padding: 30px 0 0;
 }
-/* contact */
+/* end contact */
+
+
+.productItems .header{
+    width: auto;
+    height: auto;
+    left:auto;
+    transform:none;
+    margin: 0 0 20px;
+}
+.product-grid{
+    max-width: 100%;
+    margin: 0 0 20px;
+}
+.product-description h3{
+    margin: 15px 0;
+}
+.product-description a{
+    margin: 0 0 15px;
+    font-size: 1rem;
+}
+/* end product */
