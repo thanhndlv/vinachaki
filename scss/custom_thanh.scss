@@ -307,6 +307,7 @@
   padding-bottom: 20.3125vw;
   & .col-md-4 {
     text-align: center;
+    display: flex;
   }
   & .header {
     width: 26.98489583333333vw;
@@ -347,7 +348,6 @@
 }
 .product-grid {
   text-align: center;
-  max-width: 23.8vw;
   background-color: #24282d;
   display: inline-block;
   border-bottom: 1vw solid #60666e;

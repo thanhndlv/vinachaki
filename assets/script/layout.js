@@ -13,7 +13,7 @@ for(var i = 0; i < arrayHref.length - 1 ; i++){
 var header = `
 <nav class="navbar navbar-expand-lg">
     <div class="container">
-        <a class="navbar-logo" href="#"><img src="`+linkHref+`assets/images/index/logo.png" alt=""></a>
+        <a class="navbar-logo" href="`+linkHref+`index.html"><img src="`+linkHref+`assets/images/index/logo.png" alt=""></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"></path></svg></span>
             
@@ -47,7 +47,7 @@ footer = `
     <div class="footerWrap">
         <div class="footer_logo">
             <div class="footer_logoImg">
-                <img src="`+linkHref+`assets/images/index/logo_footer.png" alt="">
+                <a href="`+linkHref+`index.html"><img src="`+linkHref+`assets/images/index/logo_footer.png" alt=""></a>
             </div>
             <p class="footer_logoDesc">We are charcoal manufacturer, charcoal<br>distributor and charcoal exporter. We are one of<br>leading exporters of wood charcoal in Viet Nam.<br>We supply charcoal for barbecue (BBQ), charcoal<br> for Shisha, charcoal for industrial applications.</p>
         </div>
@@ -58,11 +58,11 @@ footer = `
                         <a href="`+linkHref+`products/our-product.html">product</a>
                         <ul>
                             <li><a href="`+linkHref+`products/white-charcoal.html">White charcoal</a></li>
-                            <li><a href="`+linkHref+`">Hardwood charcoal</a></li>
-                            <li><a href="`+linkHref+`">Softwood charcoal</a></li>
-                            <li><a href="`+linkHref+`">Mix wood charcoal</a></li>
-                            <li><a href="`+linkHref+`">Coconut charcoal</a></li>
-                            <li><a href="`+linkHref+`">Sawduct charcoal</a></li>
+                            <li><a href="`+linkHref+`products/hardwood-charcoal.html">Hardwood charcoal</a></li>
+                            <li><a href="`+linkHref+`products/softwood-charcoal.html">Softwood charcoal</a></li>
+                            <li><a href="`+linkHref+`products/mix-wood-charcoal.html">Mix wood charcoal</a></li>
+                            <li><a href="`+linkHref+`products/coconut-charcoal.html">Coconut charcoal</a></li>
+                            <li><a href="`+linkHref+`products/sawduct-charcoal.html">Sawduct charcoal</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -182,27 +182,27 @@ var ourProduct = `
     <div class="row">
         <div class="col-4 boxInfo">
             <div class="boxImg">
-                <a href="product/hardwood-charcoal.html"><img src="assets/images/contact/product1.jpg" alt=""></a>
+                <a href="`+linkHref+`product/hardwood-charcoal.html"><img src="`+linkHref+`assets/images/contact/product1.jpg" alt="Hardwood Charcoal"></a>
                 
             </div>
             <div class="boxText">
-                <a href="product/hardwood-charcoal.html"><h4>Hardwood Charcoal</h4></a>
+                <a href="`+linkHref+`product/hardwood-charcoal.html"><h4>Hardwood Charcoal</h4></a>
             </div>
         </div>
         <div class="col-4 boxInfo">
             <div class="boxImg">
-                <a href="product/softwood-charcoal.html"><img src="assets/images/contact/product2.jpg" alt=""></a>
+                <a href="`+linkHref+`product/softwood-charcoal.html"><img src="`+linkHref+`assets/images/contact/product2.jpg" alt="Softwood Charcoal"></a>
             </div>
             <div class="boxText">
-                <a href="product/softwood-charcoal.html"><h4>Softwood Charcoal</h4></a>
+                <a href="`+linkHref+`product/softwood-charcoal.html"><h4>Softwood Charcoal</h4></a>
             </div>
         </div>
         <div class="col-4 boxInfo">
             <div class="boxImg">
-                <a href="product/mixed-wood-harcoal.html"><img src="assets/images/contact/product3.jpg" alt=""></a>
+                <a href="`+linkHref+`product/mixed-wood-harcoal.html"><img src="`+linkHref+`assets/images/contact/product3.jpg" alt="Mixed wood Charcoal"></a>
             </div>
             <div class="boxText">
-                <a href="product/mixed-wood-harcoal.html"><h4>Mixed wood Charcoal</h4></a>
+                <a href="`+linkHref+`product/mixed-wood-harcoal.html"><h4>Mixed wood Charcoal</h4></a>
             </div>
         </div>
     </div>
