@@ -76,8 +76,11 @@ footer .footer_menu .footer_menuItem ul a{
     text-align: center;
 }
 .index_sectionCategory .index_sectionCategory_categogyItem .index_sectionCategory_categogyItemNum{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem!important;
+    top: 10px;
+    left: 10px;
 }
 .index_sectionAboutUs{
     padding: 20px 0;
@@ -136,7 +139,7 @@ footer .footer_menu .footer_menuItem ul a{
 .sectionGen_contact .sectionGen_contactForm .form-group{
     margin: 0 0 20px;
 }
-.sectionGen_contact .sectionGen_contactForm, .sectionGen_contact .sectionGen_contactIntroduce,
+.sectionGen_contact .sectionGen_contactForm,
 .sectionGen_contact .sectionGen_contactIntroduce .sectionGen_contactIntroduceItem{
     margin: 0 0 20px;
 }
@@ -177,6 +180,9 @@ footer .footer_menu .footer_menuItem ul ul a{
 .index_sectionCategory .index_sectionCategory_content .index_sectionCategory_contentDesc{
     margin: 0 0 20px;
 }
+.index_sectionSlide{
+    padding: 30px 0;
+}
 .index_sectionWhyChooseUs,
 .index_sectionCategory{
     padding: 30px 0;
@@ -191,3 +197,175 @@ footer .footer_menu .footer_menuItem ul ul a{
     margin: 0 0 15px;
     font-size: 1.5rem!important;
 }
+
+/* end index */
+
+.wcu_section1{
+    padding: 30px 0;
+}
+
+.wcu_section1 .wcu_section1Wrap{
+    flex-direction: column;
+}
+
+.wcu_section1 .wcu_section1Img,.wcu_section1 .wcu_section1Content,
+.wcu_section2 .wcu_section2Content,
+.wcu_section2 .wcu_section2Img{
+    width: 100%;
+}
+.wcu_section2 .wcu_section2Img{
+    position: static;
+}
+
+.wcu_section2 .wcu_section2ContentTitle:before{
+    display: none;
+}
+
+.wcu_section1 .wcu_section1Img,.wcu_section1 .wcu_section1ContentTitle{
+    margin: 0 0 20px;
+}
+.wcu_section1Content{
+    text-align: center;
+}
+
+.wcu_section2 .wcu_section2ContentList .wcu_section2ContentListItem{
+    margin: 0 10px;
+}
+
+.wcu_section2 .wcu_section2ContentList img{
+    height: 25px;
+}
+
+.wcu_section2 .wcu_section2ContentList .wcu_section2ContentListItem:not(:last-child):before{
+    right: -10px;
+    top: 0;
+    bottom: 0;
+}
+.wcu_section2 .wcu_section2ContentList{
+    padding: 10px 0;
+}
+.wcu_section2 .wcu_section2ContentDesc{
+    margin: 0 0 20px;
+}
+.wcu_section2{
+    padding: 30px 0;
+}
+.wcu_section2Content{
+    text-align: center;
+}
+.wcu_section2Content .d-flex{
+    justify-content: center;
+}
+
+.wcu_section3 .wcu_section3List,
+.wcu_section3 .wcu_section3List .wcu_section3ListItem,
+.wcu_section3 .wcu_section3Title{
+    width: 100%;
+}
+.wcu_section3 .wcu_section3Wrap{
+    flex-direction: column-reverse;
+}
+.wcu_section3 .wcu_section3List .wcu_section3ListItemDesc{
+    padding: 0;
+}
+.wcu_section3 .wcu_section3List .wcu_section3ListItemImg{
+    min-height: auto;
+    margin: 0 0 15px;
+}
+.wcu_section3 .wcu_section3List .wcu_section3ListItemTitle{
+    margin: 0 0 15px;
+}
+.wcu_section3 .wcu_section3List .wcu_section3ListItem{
+    margin: 0 0 20px;
+}
+.wcu_section3 .wcu_section3Title::before{
+    display: none;
+}
+.wcu_section3 .wcu_section3Title{
+    margin: 0 0 20px;
+}
+.wcu_section3 .wcu_section3Title span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.wcu_section3{
+    padding: 30px 0;
+}
+
+.wcu_section4 .wcu_section4Title{
+    margin: 0 0 20px;
+    text-align: center;
+}
+.wcu_section4{
+    padding: 30px 0;
+}
+.wcu_section4 .wcu_section4ListSub{
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+.wcu_section4 .wcu_section4ListItem{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.wcu_section4 .wcu_section4ListItemTitle{
+    text-align: center;
+}
+.wcu_section4 .wcu_section4ListItemTitle{
+    font-size: 1rem!important;
+}
+.wcu_section4 .wcu_section4ListItemImg{
+    margin: 0 0 15px;
+}
+.wcu_section4 .wcu_section4ListItem{
+    margin: 0 0 20px;
+}
+.wcu_section4 .wcu_section4ListItemNum{
+    width: 30px;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.wcu_section4 .wcu_section4ListSub:before,
+.wcu_section4 .wcu_section4ListSub:after{
+    display: none;
+}
+.wcu_section4 .wcu_section4ListItem{
+    padding: 0 0 0 40px;
+}
+.wcu_section4List{
+    position: relative;
+}
+.wcu_section4List::after{
+    content: "";
+    left: 13px;
+    width: 3px;
+    position: absolute;
+    background: #C72E09;
+    bottom: 6%;
+    top: 5%;
+}
+
+.productRecom .row{
+    flex-direction: column;
+    margin: 0;
+}
+.productRecom .boxInfo{
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin: 0 0 20px;
+}
+.productRecom .boxInfo .boxText h4{
+    font-size: 1rem;
+}
+.productRecom{
+    padding: 30px 0;
+}
+.sectionGen_contact{
+    padding: 30px 0;
+}
+/* why choose us */
