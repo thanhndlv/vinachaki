@@ -128,6 +128,7 @@ footer .footer_menu .footer_menuItem ul a{
 .sectionGen_contact .sectionGen_contactForm .form-group input[type="text"], .sectionGen_contact .sectionGen_contactForm .form-group input[type="email"]{
     height: auto;
     padding: .375rem .75rem;
+    font-size: 1rem;
 }
 .sectionGen_contact .sectionGen_contactForm .form-group textarea{
     height: 90px;
@@ -368,4 +369,66 @@ footer .footer_menu .footer_menuItem ul ul a{
 .sectionGen_contact{
     padding: 30px 0;
 }
+.contact_sectionContact{
+    position: relative;
+    padding: 0;
+}
 /* why choose us */
+
+.contact_sectionContact .contact_sectionContactMap{
+    position: relative;
+    height: 350px;
+    margin: 0 0 20px;
+}
+.contact_sectionContact{
+    height: auto;
+}
+.contact_sectionContact .container{
+    height: auto;
+}
+.contact_sectionContact .sectionGen_contactForm .btn-block{
+    width: auto;
+}
+.contact_sectionQuick .contact_sectionQuick_quickSupportList{
+    flex-direction: column;
+}
+.contact_sectionQuick .contact_sectionQuick_quickSupportList .contact_sectionQuick_quickSupportListItem{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 0 0 20px;
+    border-radius: 10px;
+}
+.contact_sectionQuick .contact_sectionQuick_quickSupportList .contact_sectionQuick_quickSupportListItemIcon{
+    width: auto;
+}
+.contact_sectionQuick .contact_sectionQuick_quickSupportList .contact_sectionQuick_quickSupportListItemTitle{
+    font-size: 1rem;
+    margin: 0 0 15px;
+}
+.contact_sectionQuick .contact_sectionQuick_quickSupportList .contact_sectionQuick_quickSupportListItemIcon{
+    margin: 0 0 15px;
+}
+.sectionGen_contact .sectionGen_contactForm .d-flex{
+    flex-direction: column;
+}
+.contact_sectionQuick .sectionGen_contact .sectionGen_contactForm .form-group{
+    width:100%;
+    margin: 0 0 20px;
+}
+.contact_sectionQuick .btn-block{
+    width: auto;
+}
+.contact_sectionQuick .sectionGen_contact .sectionGen_contactForm .form-group input[type="text"], .contact_sectionQuick .sectionGen_contact .sectionGen_contactForm .form-group input[type="email"]{
+    padding: .375rem .75rem;
+}
+.contact_sectionContact .sectionGen_contactForm{
+    margin: 0;
+}
+.contact_sectionContact,{
+    padding: 0 0 30px;
+}
+.contact_sectionQuick{
+    padding: 30px 0 0;
+}
+/* contact */
