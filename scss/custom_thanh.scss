@@ -151,6 +151,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #ffffff;
+  overflow: hidden;
   .headerProductKindLeft {
     width: 52.1825vw;
     margin: 0 3.125vw 0 0;
@@ -175,6 +176,7 @@
     width: 36.71875vw;
     height: 51.3vw;
     margin-right: -7vw;
+    display: flex;
     & img {
       width: 100%;
       height: auto;
@@ -476,4 +478,103 @@
      
   }
 }
+.headerProductDetails.detail2{
+  .container{
+    width: 91.1vw;
+    .headerProductDetailsBoxLeft.detail2{
+      width: 45.1vw;
+      .headerProductDetails_video{
+        width: 100%;
+        display: flex;
+        border: solid 2px #000000;
+      }
+      .headerProductDetails_info{
+        width: 100%;
+        .list {
+          width: 100%;
+          margin: 3.125vw auto 7.3vw;
+          li {
+              width: 10.7vw;
+          } 
+        }
+      }
+    }
+    .headerProductDetailsBoxRight.detail2{
+      width: 41.6vw;
+      margin-top: 6.25vw;
+      .headerProductDetailsBoxRight_intro{
+        .headerProductDetailsBoxRight_introText{
+          .headerProductDetailsBoxRight_introTitle{
+            font-size: 5.625vw;
+            padding-left: 3.125vw;
+            text-indent: -3.125vw;
+          }
+        }
+      .headerProductDetailsBoxRight_introInfo{
+        width: 100%;
+        margin-top: 10.4vw;
+        background-color:#C1272D;
+        border-radius: 0.3vw;
+        display: flex;
+        justify-content: space-between;
+        padding: 0.78125vw;
+        .introInfoCol{
+          display: flex;
+          width: 13.3vw;
+          border-right: 1px solid #ffffff;
+          margin-right: 0.8vw;
+          &:last-child{
+            border: none;
+            margin-right: 0;
+          }
+          .boxInfo{
+            display: flex;
+            align-items: center;
+            
+            .icon{
 
+            }
+            .text{
+              color: #ffffff;
+              line-height: 1.2;
+              padding-left: 1vw;
+              letter-spacing: -1px;
+            }
+          }
+        }
+      }
+      }
+    }
+  }
+}
+.seeAlso{
+  background-color: #F4F4F4;
+  padding: 4.6875vw 0 6.25vw 0;
+    .seeAlsoInner{
+      .seeAlsoTitle{
+        font-size: 3.65vw;
+        color:#3C4149;
+        margin-bottom: 3.125vw;
+      }
+      .seeAlsoInner_box{
+        display: flex;
+        justify-content: space-between;
+        .seeAlsoInner_boxInfo{
+          display: flex;
+          justify-content: space-between;
+          width: 41.1vw;
+          border: solid 2px #D13A17;
+          background-color: #24282D;
+          color:#ffffff;
+          padding: 1.3vw;
+          .boxInfoImg{
+            width: 20.8vw;
+          }
+          .boxInfoText{
+            width: 15.625vw;
+            height: 19.375vw;
+          }
+        }
+      }
+    }
+}
