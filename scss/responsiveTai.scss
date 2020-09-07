@@ -645,6 +645,7 @@ footer .footer_menu .footer_menuItem ul ul a{
 }
 .headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro{
     text-align:center;
+    margin: 0;
 }
 .headerProductKind .headerProductKindWrap{
     display: flex;
@@ -705,4 +706,70 @@ footer .footer_menu .footer_menuItem ul ul a{
     display: flex;
 }
 
+.headerProductDetails.detail2 .container .headerProductDetailsBoxLeft.detail2{
+    width:100%;
+}
+.detail2 .headerProductDetailsWrap{
+    flex-direction: column;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxLeft.detail2 .headerProductDetails_info .list li{
+    width: 23%;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxLeft.detail2 .headerProductDetails_info .list{
+    margin: 20px 0;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2{
+    width: 100%;
+    margin: 0;
+    text-indent: unset;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo{
+    margin: 20px 0 0;
+    flex-wrap: wrap;
+    padding:10px;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol{
+    width: 100%;
+    border:none;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #fff;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol:last-child{
+    margin: 0;
+    padding: 0;
+}
+
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol .boxInfo .text{
+    width: calc(100% - 55px);
+    text-align: left;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol .boxInfo{
+    width:100%;
+    justify-content: space-between;
+}
+.seeAlso{
+    padding: 30px 0;
+    text-align: center;
+}
+.seeAlso .seeAlsoInner .seeAlsoInner_box .seeAlsoInner_boxInfo{
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 0 20px;
+}
+.seeAlso .seeAlsoInner .seeAlsoInner_box .seeAlsoInner_boxInfo:last-child{
+    margin:0;
+}
+.seeAlso .seeAlsoInner .seeAlsoInner_box .seeAlsoInner_boxInfo .boxInfoImg{
+    width: 100%;
+    margin: 0 0 15px;
+}
+.seeAlso .seeAlsoInner .seeAlsoInner_box .seeAlsoInner_boxInfo .boxInfoText{
+    width: 100%;
+    height: auto;
+}
+.seeAlso .seeAlsoInner .seeAlsoInner_box{
+    flex-wrap: wrap;
+}
 /*product detail*/
