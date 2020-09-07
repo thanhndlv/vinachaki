@@ -590,3 +590,119 @@ footer .footer_menu .footer_menuItem ul ul a{
     margin: 0 0 15px;
 }
 /* end faq */
+
+
+.headerProductDetails{
+    padding: 30px 0;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxLeft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.headerProductDetailsWrap{
+    flex-wrap: wrap;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxLeft .headerProductDetails_video{
+    width: 100%;
+    height: 300px;
+    
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxLeft .headerProductDetails_video iframe{
+    height: 100%;
+    width: 100%;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxLeft .headerProductDetails_info .list{
+    width: 100%;
+    margin: 20px 0;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxLeft .headerProductDetails_info .list li{
+    width: 20%;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .headerProductDetailsBoxRight_introTitle{
+    padding:0;
+    text-indent: unset;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight,
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .text,
+.headerProductKind .headerProductKindLeft,
+.headerProductKind .headerProductKindRight,
+.contentWoods .contentWoodsBox .contentWoodsLeft,
+.contentWoods .contentWoodsBox .contentWoodsRight,
+.contentWoods .contentWoodsBox .contentWoodsLeft_img,
+.contentWoods .contentWoodsBox .contentWoodsRight_text{
+    width: 100%;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro{
+    width:100%;
+    margin: 0 0 20px;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_boxImg{
+    display: none;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .text{
+    padding: 0;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro{
+    text-align:center;
+}
+.headerProductKind .headerProductKindWrap{
+    display: flex;
+    flex-direction: column;
+}
+.headerProductKind .headerProductKindRight{
+    height: auto;
+}
+.headerProductKind .headerProductKindLeft{
+    padding: 0;
+    margin: 0 0 20px;
+}
+.headerProductKind .headerProductKindLeft .headerProductKindLeft_box{
+    padding: 10px;
+}
+.headerProductKind{
+    padding: 30px 0;
+}
+.contentWoods{
+    padding: 30px 0;
+}
+.contentWoods .contentWoodsTitle{
+    text-align: center;
+    margin:0 0 20px;
+}
+.contentWoods .contentWoodsBox{
+    margin: 0 0 20px;
+    flex-direction: column;
+}
+.contentWoods .contentWoodsBox:last-child{
+    margin: 0;
+}
+.contentWoods .contentWoodsBox .contentWoodsRight,
+.contentWoods .contentWoodsBox .contentWoodsLeft,
+.contentWoods .contentWoodsBox .contentWoodsLeft_img,
+.contentWoods .contentWoodsBox .contentWoodsRight_text{
+    position: static;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.contentWoods .contentWoodsBox .contentWoodsLeft,
+.contentWoods .contentWoodsBox .contentWoodsRight_text{
+    padding: 10px;
+}
+.contentWoods .contentWoodsBox .contentWoodsLeft .btnDetail,
+.contentWoods .contentWoodsBox .contentWoodsRight_text .btnDetail{
+    position: static;
+    font-size: 1rem;
+    width: auto;
+    border: 1px solid;
+}
+.contentWoods .contentWoodsBox .contentWoodsLeft .contentWoodsLeftTitle{
+    font-weight: bold;
+}
+.contentWoods .contentWoodsBox:nth-child(odd){
+    flex-direction: column-reverse;
+    display: flex;
+}
+
+/*product detail*/
