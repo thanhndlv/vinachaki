@@ -1,14 +1,15 @@
 .faq {
   padding: 5vw 0 7vw 0;
+  background: #f4f4f4;
   h2 {
-    font-size: 3.125rem;
-    margin-bottom: 1vw;
+    font-size: 2.6vw;
+    margin-bottom: 2vw;
     text-align: center;
   }
   .boxFAQ {
     border: 2px solid #24282d;
     border-radius: 10px;
-    padding: 80px 50px 180px 50px;
+    padding: 2.6vw 1.5vw;
     width: 100%;
     display: flex;
     align-content: space-between;
@@ -20,15 +21,17 @@
       text-align: center;
       .circle {
         border-radius: 50%;
-        width: 65px;
-        height: 65px;
-        padding: 10px;
+        width: 3.4vw;
+        height: 3.4vw;
+        padding: 0.5vw;
         background: #fff;
         border: 3px solid #707070;
         color: #000;
         text-align: center;
-        font-size: 2.875rem;
-        line-height: 45px;
+        font-size: 2.5vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
     }
     .text {
@@ -36,8 +39,10 @@
 
       h4 {
         color: #24282d;
+        font-size: 1.3vw;
       }
       p {
+        font-size: 1vw;
         color: #24272c;
       }
     }
