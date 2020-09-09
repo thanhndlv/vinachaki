@@ -116,7 +116,7 @@ var contact = `
         <div class="sectionGen_contactForm">
             <h2 class="sectionGen_contactFormTitle">Contact us</h2>
             <p class="sectionGen_contactFormDesc">Feel free to contact us any time. We will get back to you as<br>soon as we can!</p>
-            <form id="contact">
+            <form id="contactGen" method="POST" action="">
                 <div class="d-flex">
                     <div class="form-group">
                         <input type="text" class="form-control" id="contactName" placeholder="Name">
