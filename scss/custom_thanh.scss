@@ -266,15 +266,19 @@
       .btnDetail {
         font-size: 1.1458vw;
         width: 13.54vw;
-        border: solid 6px #d13a17;
+        border: solid 0.3vw #E8160D;
         text-align: center;
         padding: 1.042vw;
-        color: #d13a17;
+        color: #E8160D;
         font-weight: bold;
         text-decoration: none;
         position: absolute;
         right: 14.0625vw;
         bottom: 2.864vw;
+        background: none;
+        &:hover{
+          background: #E8160D;
+        }
       }
     }
     .contentWoodsRight {
@@ -308,15 +312,19 @@
       .btnDetail {
         font-size: 1.1458vw;
         width: 13.54vw;
-        border: solid 6px #d13a17;
+        border: solid 0.3vw #E8160D;
         text-align: center;
         padding: 1.042vw;
-        color: #d13a17;
+        color: #E8160D;
         font-weight: bold;
         text-decoration: none;
         position: absolute;
-        right: 5.7vw;
+        right: 14.0625vw;
         bottom: 2.864vw;
+        background: none;
+        &:hover{
+          background: #E8160D;
+        }
       }
     }
     .contentWoodsLeft_img{

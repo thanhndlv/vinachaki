@@ -260,7 +260,7 @@
                     <div class="index_sectionAboutUs_content">
                         <h2 class="index_sectionAboutUs_contentTitle">About us</h2>
                         <p class="index_sectionAboutUs_contentDesc">Check out what we do<br>in this video</p>
-                        <a href="" class="btn btn-block btn-white btn-hover-white"><span>Download Company Profile</span></a>
+                        <a href="" data-options="pop1" class="js-popup btn btn-block btn-white btn-hover-white"><span>Download Company Profile</span></a>
                     </div>
                 </div>
             </div>
@@ -269,7 +269,29 @@
         <section id="layout-contact" class="sectionGen_contact"></section>
 
     </main>
-
+    <div class="popup popup-download sectionGen_contact" data-target="pop1">
+        <div class="container">
+            <div class="popup-content">
+                <form action="/" method="POST" class="sectionGen_contactForm popup-download-form">
+                    <p class="popup-download-desc">Please enter the following information to download our company profile</p>
+                    <div class="form-group">
+                        <input type="text" name="popup-download-name" class="form-control" id="popup-download-name" placeholder="Name">
+                        <span class="form-group-txt-hover">Name</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="popup-download-phone" class="form-control" id="popup-download-phone" placeholder="Phone">
+                        <span class="form-group-txt-hover">Phone</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="popup-download-email" class="form-control" id="popup-download-email" placeholder="Email address">
+                        <span class="form-group-txt-hover">Email</span>
+                    </div>
+                    <button type="submit" class="btn btn-orange">Download Company Profile</button>
+                </form>
+                <p class="popup-close">X</p>
+            </div>
+        </div>
+    </div>
     <footer class="footer" id="layout-footer">
     </footer>
     <script src="assets/script/jquery-3.5.1.min.js"></script>
