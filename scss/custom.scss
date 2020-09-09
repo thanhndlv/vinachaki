@@ -361,7 +361,7 @@ header{
             content:"";
             left: -4.9vw;
             top: -3.6vw;
-            background: linear-gradient(to left bottom, rgba(199, 80, 0, 35) 0%, rgba(232, 18, 12, 1) 100%);
+            background: linear-gradient(to right top, rgba(235, 38, 25, 35) 0%, rgba(253, 203, 8, 1) 100%);
             width: 33vw;
             position: absolute;
             height: 39vw;
@@ -381,7 +381,7 @@ header{
         border-radius: 1.9vw;
         color: #fff;
         text-align: center;
-        background: linear-gradient(to left bottom, rgba(241, 115, 12, 35) 0%, rgba(232, 18, 12, 1) 100%);
+        background: linear-gradient(to right top, rgba(238, 47, 34, 35) 0%, rgba(253, 203, 8, 1) 100%);
         padding: 2vw 0;
         .index_sectionWhyChooseUs_itemIcon{
             margin : 0 0 1.2vw;
@@ -470,10 +470,12 @@ header{
         position: relative;
         display: flex;
         width: 49%;
-        background: -webkit-gradient(linear, right top, left bottom, from(#f1730c), to(#e8120c));
-        background: linear-gradient(to left bottom, #f1730c 0%, #e8120c 100%);
+        // background: -webkit-gradient(linear, right top, left bottom, from(#f1730c), to(#e8120c));
+        // background: linear-gradient(to left bottom, #f1730c 0%, #e8120c 100%);
+        background: #ffffff;
         border-radius: 1.5vw;
         margin: 0 0 1vw;
+        border: 5px solid #FAAD0D;
         .index_sectionCategory_categogyItemLink{
             padding: 2vw 0 1.1vw;
         }
@@ -482,9 +484,10 @@ header{
             margin: 0 1.3vw 0 0;
             display: flex;
             align-items: center;
+            justify-content: center;
         }
         a{
-            color: #fff;
+            color: #000000;
             margin: 0 0 .9vw;
             display: block;
         }
@@ -562,8 +565,8 @@ header{
         justify-content: space-between;
     }
     .sectionGen_contactIntroduce{
-        background: -webkit-gradient(linear, right top, left bottom, from(#f1730c), to(#e8120c));
-        background: linear-gradient(to left bottom, #f1730c 0%, #e8120c 100%);
+        background: -webkit-gradient(linear, right top, left bottom, from(#FDCB08), to(#EE2F22));
+        background: linear-gradient(to left bottom, #FDCB08 0%, #EE2F22 100%);
         width: 32vw;
         border-radius: 0.52vw;
         color: #fff;
