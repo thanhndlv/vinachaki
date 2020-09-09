@@ -994,7 +994,7 @@ footer {
           display: inline-block;
           list-style: none; }
   .headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight {
-    width: 43.75vw; }
+    width: 41.75vw; }
     .headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro {
       margin-bottom: 4.43vw; }
       .headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText {
@@ -1021,7 +1021,7 @@ footer {
           position: absolute;
           background-size: 100%;
           left: 2.6vw;
-          top: -2.6vw; }
+          top: -1.4vw; }
         .headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .text:after {
           border: 6px solid #D13A17;
           content: "";
@@ -1082,7 +1082,6 @@ footer {
       min-height: 39vw; }
   .headerProductKind .headerProductKindRight {
     width: 36.71875vw;
-    min-height: 51.3vw;
     position: absolute;
     right: 0;
     display: flex; }
@@ -1438,7 +1437,8 @@ footer {
       color: #ffffff;
       padding: 1.3vw; }
       .seeAlso .seeAlsoInner .seeAlsoInner_box .seeAlsoInner_boxInfo .boxInfoImg {
-        width: 20.8vw; }
+        width: 20.8vw;
+        min-height: 20.8vw; }
       .seeAlso .seeAlsoInner .seeAlsoInner_box .seeAlsoInner_boxInfo .boxInfoText {
         width: 15.625vw;
         min-height: 19.375vw; }
@@ -1464,8 +1464,18 @@ footer {
       vertical-align: middle; }
       .Specification .container .tabInfo .table-responsive .table {
         margin: 0; }
+        .Specification .container .tabInfo .table-responsive .table th:nth-of-type(1) {
+          width: 18.2vw; }
+        .Specification .container .tabInfo .table-responsive .table th:nth-of-type(2) {
+          width: 8.9vw; }
+        .Specification .container .tabInfo .table-responsive .table th:nth-of-type(3) {
+          width: 15.6vw; }
+        .Specification .container .tabInfo .table-responsive .table th:nth-of-type(4) {
+          width: 15.6vw; }
+        .Specification .container .tabInfo .table-responsive .table th:nth-of-type(5) {
+          width: 10.4vw; }
         .Specification .container .tabInfo .table-responsive .table th, .Specification .container .tabInfo .table-responsive .table td {
-          padding: 0;
+          padding: 2.6vw;
           vertical-align: middle;
           border-top: 2px solid #000000;
           border-right: 2px solid #000000; }
@@ -1479,19 +1489,22 @@ footer {
           border-bottom: none; }
         .Specification .container .tabInfo .table-responsive .table .header th:first-child {
           padding: 0; }
-        .Specification .container .tabInfo .table-responsive .table .infoTitle {
+        .Specification .container .tabInfo .table-responsive .table .header
+.infoTitle {
           position: relative;
           overflow: hidden;
           min-height: 6.25vw;
           padding: 0; }
-          .Specification .container .tabInfo .table-responsive .table .infoTitle .tt1 {
+          .Specification .container .tabInfo .table-responsive .table .header
+.infoTitle .tt1 {
             position: absolute;
-            right: 0;
-            top: 0; }
-          .Specification .container .tabInfo .table-responsive .table .infoTitle .tt2 {
+            right: 1vw;
+            top: 1vw; }
+          .Specification .container .tabInfo .table-responsive .table .header
+.infoTitle .tt2 {
             position: absolute;
-            left: 0;
-            bottom: 0; }
+            left: 1vw;
+            bottom: 1vw; }
         .Specification .container .tabInfo .table-responsive .table .bg {
           background-color: #4B505A; }
 
