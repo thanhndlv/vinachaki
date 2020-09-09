@@ -90,6 +90,7 @@
       width: 39.27vw;
       .headerProductDetails_video {
         width: 39.27vw;
+        min-height: 22.8vw;
       }
       .headerProductDetails_info {
         display: flex;
@@ -124,17 +125,56 @@
             text-indent: -8.854vw;
             line-height: 1;
           }
+
           .text {
             font-size: 1.825vw;
             color: #616467;
             width: 33.8541vw;
             line-height: 1.285;
             padding-left: 6.25vw;
+            position: relative;
+            margin-top: 4.1vw;
           }
+          .text:before{
+            background: url(../images/product/icon_quote.png) no-repeat;
+            content: "";
+            width: 3.4375vw;
+            min-height: 3.125vw;
+            position: absolute;
+            background-size: 100%;
+            left: 2.6vw;
+            top: -2.6vw;
+          }
+          .text:after{
+            border: 6px solid #D13A17;
+            content: "";
+            width: 20.2vw;
+            height: 19.375vw;
+            position: absolute;
+            top: -6vw;
+            left: 0;
+            z-index: -1;
+          }
+          .box{
+            display: flex; 
+            flex-direction: row-reverse;
+            .list2{
+              display: flex;
+              justify-content: space-between;
+              text-align: center;
+              width: 21.9vw;
+              
+              li {
+                list-style: none;
+                width: 5.785vw;
+              }
+            }
+          }
+          
         }
         .headerProductDetailsBoxRight_boxImg {
           width: 20.15625vw;
-          height: 19.375vw;
+          min-height: 19.375vw;
           border: solid 6px #d13a17;
           z-index: 1;
           position: relative;
@@ -143,7 +183,7 @@
           .icon {
             padding: 1.5625vw 0 0 1.041vw;
             width: 3.4375vw;
-            height: 3.125vw;
+            min-height: 3.125vw;
           }
         }
       }
@@ -157,6 +197,7 @@
   align-items: center;
   background-color: #ffffff;
   overflow: hidden;
+  position: relative;
   .headerProductKindLeft {
     width: 52.1825vw;
     margin: 0 3.125vw 0 0;
@@ -182,8 +223,9 @@
   }
   .headerProductKindRight {
     width: 36.71875vw;
-    height: 51.3vw;
-    margin-right: -7vw;
+    min-height: 51.3vw;
+    position: absolute;
+    right: 0;
     display: flex;
     & img {
       width: 100%;
@@ -208,7 +250,7 @@
       display: flex;
       flex-direction: column;
       width: 51.82vw;
-      height: 24.635vw;
+      min-height: 24.635vw;
       border: solid 0.3125vw #d13a17;
       padding: 1.823vw;
       position: relative;
@@ -241,14 +283,14 @@
       right: 0;
       top: 0;
       width: 36.04vw;
-      height: 22.55vw;
+      min-height: 22.55vw;
     }
     .contentWoodsRight_text{
       position: absolute;
       right: 0;
       top: 0;
       width: 51.82vw;
-      height: 24.635vw;
+      min-height: 24.635vw;
       display: flex;
       flex-direction: column;
       border: solid 0.3125vw #d13a17;
@@ -281,7 +323,7 @@
       position: relative;
       z-index: 2;
       width: 36.04vw;
-      height: 22.55vw;
+      min-height: 22.55vw;
       margin-bottom: 5.72vw;
     }
   }
@@ -337,7 +379,7 @@
   }
   & .bg3 {
     width: 55.540625vw;
-    height: 30vw;
+    min-height: 30vw;
     & img {
       width: 55.5vw;
       top: 0%;
@@ -447,7 +489,7 @@
   }
 }
 .col-img-bag img {
-  height: 10.4vw;
+min-height: 10.4vw;
 }
 .col-bag {
   display: flex;
@@ -467,7 +509,7 @@
   & .circle-number {
     display: block;
     width: 2vw;
-    height: 2vw;
+    min-height: 2vw;
     background: #707070;
     border-radius: 1vw;
     position: relative;
@@ -552,15 +594,13 @@
               display: flex;
               align-items: center;
               
-              .icon{
-
-              }
               .text{
                 color: #ffffff;
                 line-height: 1.2;
                 padding-left: 1vw;
                 letter-spacing: -1px;
               }
+              
             }
           }
         }
@@ -579,8 +619,8 @@
           }
         }
         .headerProductDetailsBoxRight_introInfoBg{
-          background: -webkit-gradient(linear, right top, left bottom, from(#f1730c), to(#e8120c));
-          background: linear-gradient(to left bottom, #f1730c 0%, #e8120c 100%);
+          background: -webkit-gradient(linear, right top, left bottom, from(#FDCB08), to(#EE2F22));
+          background: linear-gradient(to left bottom, #FDCB08 0%, #EE2F22 100%);
         }
         .headerProductDetailsBoxRight_introInfoWrap{
           margin: 10vw 0 0 0;
@@ -627,9 +667,107 @@
           }
           .boxInfoText{
             width: 15.625vw;
-            height: 19.375vw;
+            min-height: 19.375vw;
           }
         }
       }
     }
+}
+.Specification{
+  background-color: #E4E4E4;
+  text-align: center;
+  .container{
+    padding: 6.25vw 0 13.5vw 0;
+    border-bottom: 2px solid #707070;
+    .title{
+      font-size: 3.6vw;
+      margin-bottom: 3.6vw;
+    }
+    .tabInfo{
+      display: flex;
+      justify-items: center;
+      justify-content: center;
+      width: 68.48vw;
+      margin: 0 auto;
+      background-color: #3C4149;
+      color: #ffffff;
+      border-radius: 1.5vw;
+      vertical-align: middle;
+      .table-responsive{
+        .table{
+          margin: 0;
+          & th,td{
+            padding: 0;
+            vertical-align: middle;
+            border-top: 2px solid #000000;
+            border-right: 2px solid #000000;
+          }
+          td:last-child{
+            border-right: 0;
+          }
+          th:last-child{
+            border-right: 0;
+          }
+           .header th{
+             padding: 2.6vw 0;
+             border-top: none;
+             border-bottom: none;
+             
+           }
+           .header th:first-child{
+              padding: 0;
+            }
+          .infoTitle{
+            position: relative;
+            overflow: hidden;
+            min-height: 6.25vw;
+            padding: 0;
+            .tt1{
+              position: absolute;
+              right: 0;
+              top: 0;
+    
+            }
+            .tt2{
+              position: absolute;
+              left: 0;
+              bottom: 0;
+            }
+          }
+          .bg{
+            background-color: #4B505A;
+          }
+        }
+      }
+    }
+  }
+}
+.infoWoods{
+  .infoWoodsInner{
+    width: 56.5vw;
+    margin: 9.375vw auto;
+    border-radius: 1.5vw;
+    background-color: #3C4149;
+    color: #ffffff;
+    font-size: 0.8vw;
+    .table td{
+      vertical-align: middle;
+      padding: 0.5vw;
+      padding-left: 4.7vw;
+      border-top: 2px solid #24282D;
+      border-right: 2px solid #24282d;
+      span {
+          margin-right: 1vw;
+      }
+    }
+    .table tr:first-child td{
+      border-top: none;
+    }
+    .table tr:nth-child(2n){
+      background-color: #4B505A;
+    }
+    .table td:nth-child(2n){
+      border-right:none;
+    }
+  }
 }
