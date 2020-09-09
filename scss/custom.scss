@@ -701,12 +701,12 @@ header{
                 max-height: 11vw;
                 padding: 2vw 2vw;
             }
-            input[type="text"],input[type="email"]{
+            input[type="text"],input[type="email"],input{
                 height: 4.8vw;
                 padding: 0 2vw;
             }
         }
-        #contact{
+        #contactGen{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -1213,7 +1213,6 @@ footer{
     opacity: 0;
     transition: .3s;
     max-height: 100vh;
-    display: none;
     .container{
         display: flex;
         justify-content: center;
