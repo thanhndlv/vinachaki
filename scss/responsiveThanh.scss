@@ -1,3 +1,26 @@
 .headerProductDetailsBoxRight_introText .text:after , .headerProductDetailsBoxRight_introText .text:before{
  display: none;
 }
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .box .list2 li{
+    width: 30%;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .box .list2{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+.infoWoods .container{
+    margin: 0;
+    width: 100%;
+}
+.infoWoods .infoWoodsInner{
+    width: 100%;
+}
+.infoWoods .infoWoodsInner .table td{
+    padding: 0 2vw;
+    font-size: 3vw;
+}
+.Specification .container .tabInfo{
+    width: 100%;
+}
