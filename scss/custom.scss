@@ -1202,3 +1202,76 @@ footer{
         
     }
 }
+.popup{
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    padding: 0;
+    transform: translateY(-50%);
+    top: -50%;
+    opacity: 0;
+    transition: .3s;
+    max-height: 100vh;
+    display: none;
+    .container{
+        display: flex;
+        justify-content: center;
+
+    }
+    .popup-content{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background: #fff;
+        min-width: 320px;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+        max-height: 100vh;
+        max-width: 100%;
+        
+    }
+    .popup-close{
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding: 10px;
+        cursor: pointer;
+    }
+}
+.has-popup {
+    position: relative;
+    overflow: hidden;
+    &:before{
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: fixed;
+        content:"";
+        background: #000;
+        opacity: .8;
+        z-index: 9;
+    }
+    .popup{
+        opacity: 1;
+        top: 50%;
+    }
+}
+.popup-download .popup-download-form{
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    .form-group{
+        width: 100%;
+    }
+    button{
+        border-radius: 0;
+        background: #E8160D;
+        color: #fff;
+    }
+}
