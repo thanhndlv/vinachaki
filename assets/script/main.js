@@ -8,3 +8,16 @@ $(window).resize(function(){
 	}
 });
 $(window).trigger("resize");
+$(document).ready(function(){
+	if($('.js-popup').length> 0){
+		$('.js-popup').click(function(e){
+			e.preventDefault();
+			$('body').addClass('has-popup');
+			$('[data-target]').hide();
+			$('[data-target="'+$(this).data('options')+'"]').show();
+		});
+		$('.popup-close').click(function(){
+			$('body').removeClass('has-popup');
+		})
+	}
+});

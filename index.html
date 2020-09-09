@@ -36,10 +36,12 @@
                     <div class="index_sectionSlide_intro">
                         <h1 class="index_sectionSlide_introTitle">We are the Charcoal King in Vietnam.</h1>
                         <p>We are charcoal manufacturers and exporters from Vietnam. We supply a wide variety of high quality charcoal products for BBQ, Shisha and industrial applications.</p>
-                        <a href="contact.html" class="btn btn_txtChange">
-                            <span class="btn_txtDefault">Request a quotation</span>
-                            <span class="btn_txtHover">Let's win together!</span>
-                        </a>
+                        <div class="d-flex">
+                            <a href="contact.html" class="btn btn_txtChange">
+                                <span class="btn_txtDefault">Request a quotation</span>
+                                <span class="btn_txtHover">Let's win together!</span>
+                            </a>
+                        </div>
                     </div>
                     
                     <div class="index_sectionSlide_slide">
@@ -117,7 +119,7 @@
                     </div>
                 </div>
 
-                <a href="" class="btn btn-block btn-orange btn-ar-white"><span>Why choose us?</span></a>
+                <a href="" class="btn btn-block btn-orange btn-ar-white-hover"><span>Why choose us?</span></a>
 
             </div>
         </section>
@@ -130,7 +132,7 @@
                     <div class="index_sectionCategory_content">
                         <h2 class="index_sectionCategory_contentTitle"><span>VinaChaki<br>Products</span></h2>
                         <p class="index_sectionCategory_contentDesc">A charcoal kingdom</p>
-                        <a class="btn btn-block btn-gray btn-ar-dask"><span>Detail</span></a>
+                        <a class="btn btn-block btn-gray btn-ar-dask-hover"><span>Detail</span></a>
                     </div>
                     <div class="index_sectionCategory_categogy">
                         <div class="index_sectionCategory_categogyItem">
@@ -258,7 +260,7 @@
                     <div class="index_sectionAboutUs_content">
                         <h2 class="index_sectionAboutUs_contentTitle">About us</h2>
                         <p class="index_sectionAboutUs_contentDesc">Check out what we do<br>in this video</p>
-                        <a href="" class="btn btn-block btn-white">Download Company Profile</a>
+                        <a href="" data-options="pop1" class="js-popup btn btn-block btn-white btn-hover-white"><span>Download Company Profile</span></a>
                     </div>
                 </div>
             </div>
@@ -267,7 +269,29 @@
         <section id="layout-contact" class="sectionGen_contact"></section>
 
     </main>
-
+    <div class="popup popup-download sectionGen_contact" data-target="pop1">
+        <div class="container">
+            <div class="popup-content">
+                <form action="/" method="POST" class="sectionGen_contactForm popup-download-form">
+                    <p class="popup-download-desc">Please enter the following information to download our company profile</p>
+                    <div class="form-group">
+                        <input type="text" name="popup-download-name" class="form-control" id="popup-download-name" placeholder="Name">
+                        <span class="form-group-txt-hover">Name</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="popup-download-phone" class="form-control" id="popup-download-phone" placeholder="Phone">
+                        <span class="form-group-txt-hover">Phone</span>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="popup-download-email" class="form-control" id="popup-download-email" placeholder="Email address">
+                        <span class="form-group-txt-hover">Email</span>
+                    </div>
+                    <button type="submit" class="btn btn-orange">Download Company Profile</button>
+                </form>
+                <p class="popup-close">X</p>
+            </div>
+        </div>
+    </div>
     <footer class="footer" id="layout-footer">
     </footer>
     <script src="assets/script/jquery-3.5.1.min.js"></script>

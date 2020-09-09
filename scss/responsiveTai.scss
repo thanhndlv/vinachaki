@@ -27,9 +27,11 @@ h3,h4{
 .btn-block,.index_sectionCategory .btn-block{
     width: 100%;
 }
-.index_sectionSlideWrap,
-.index_sectionWhyChooseUs .index_sectionWhyChooseUsWrap{
+.index_sectionSlideWrap{
     flex-direction: column;
+}
+.index_sectionWhyChooseUs .index_sectionWhyChooseUsWrap{
+    flex-wrap: wrap;
 }
 .index_sectionSlide .index_sectionSlide_intro,
 .index_sectionSlide .index_sectionSlide_slide{
@@ -47,7 +49,6 @@ h3,h4{
     width: 20px;
     height: 100%;
 }
-.index_sectionWhyChooseUs .index_sectionWhyChooseUs_item,
 .index_sectionCategory .index_sectionCategory_categogyItem{
     max-width:100%;
     flex: 0 0 100%;
@@ -55,11 +56,19 @@ h3,h4{
     margin: 0 0 20px;
     width: 100%;
 }
+.index_sectionWhyChooseUs .index_sectionWhyChooseUs_item{
+    flex: 0 0 48%;
+    max-width: 48%;
+    margin: 0 0 15px;
+}
+.index_sectionWhyChooseUs .index_sectionWhyChooseUs_item h2{
+    font-size: 1rem!important;
+}
 .index_sectionCategory .index_sectionCategory_categogy{
     width: 100%;
 }
 .index_sectionWhyChooseUs .index_sectionWhyChooseUs_item .index_sectionWhyChooseUs_itemIcon{
-    height: auto;
+    height: 65px;
 }
 .index_sectionCategory .index_sectionCategoryWrap,
 .index_sectionCategory .index_sectionCategory_categogy,
@@ -814,3 +823,17 @@ footer .footer_menu .footer_menuItem ul ul a{
     margin: 0 0 20px;
 }
 /*product detail*/
+
+.navbar-logo{
+    height: 60px;
+}
+.navbar-logo img{
+    height: 100%;
+    width: auto;
+}
+button:focus{
+    outline:none;
+}
+.index_sectionSlide .index_sectionSlide_intro .d-flex{
+    justify-content: center;
+}
