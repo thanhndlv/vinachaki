@@ -36,7 +36,9 @@ main{
     position: relative;
     z-index: 0;
 }
-
+.slick-slide img{
+    width: 100%;
+}
 header{
     background: transparent;
     position: relative;
@@ -175,11 +177,11 @@ header{
         background-color: $bg;
     }
 }
-@mixin btn-arrow($color) {
+@mixin btn-arrow-hover($color) {
     &:before{
         content: "";
         position: absolute;
-        border: 2px solid $color;
+        border: 0.2vw solid $color;
         border-top: 0;
         border-left: 0;
         width: 0.8vw;
@@ -189,17 +191,17 @@ header{
         opacity: 0;
         transition: 0.3s;
         right:0;
+        margin-top: -0.1vw;
     }
     &:after{
         content: "";
-        width: 0.8vw;
+        width: 0.9vw;
         height: 0.2vw;
         background: $color;
         position: absolute;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
         top: 50%;
-        margin: 0.1vw 0 0 0;
         opacity: 0;
         transition: 0.3s;
         right:0;
@@ -209,7 +211,7 @@ header{
             right: 2vw;
         }
         &:after{
-            right: 2.4vw;
+            right: 2.3vw;
         }
         &:before,&:after{
             opacity: 1;
@@ -223,18 +225,100 @@ header{
         transition: .3s;
     }
 }
-.btn-ar-white{
+@mixin btn-bracket($color){
     position: relative;
-    @include btn-arrow(#fff);
+    &:before{
+        content: "";
+        position: absolute;
+        border: 0.2vw solid #E8160D;
+        border-right: 0;
+        height: 1.6vw;
+        width: 1vw;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 3vw;
+        transition: .3s;
+    }
+}
+@mixin btn-arrow($color) {
+    &:before{
+        content: "";
+        position: absolute;
+        border: 0.2vw solid $color;
+        border-top: 0;
+        border-left: 0;
+        width: 0.8vw;
+        height: 0.8vw;
+        transform: rotate(-45deg) translateY(-50%);
+        top: 50%;
+        transition: 0.3s;
+        right: 4vw;
+        margin-top: -0.1vw;
+    }
+    &:after{
+        content: "";
+        width: 0.9vw;
+        height: 0.2vw;
+        background: $color;
+        position: absolute;
+        -webkit-transform: translateY(-50%);
+        transform: translateY(-50%);
+        top: 50%;
+        transition: 0.3s;
+        right: 4.2vw;
+    }
+}
+.btn-ar-white-hover{
+    position: relative;
+    @include btn-arrow-hover(#fff);
     @include btn-hover(#E8160D,#fff);
 }
-.btn-ar-dask{
+
+.btn-ar-dask-hover{
     position: relative;
-    @include btn-arrow(#fff);
+    @include btn-arrow-hover(#fff);
     @include btn-hover(#000,#fff);
 }
 .btn-hover-white{
-    @include btn-hover(#000,#fff);
+    @include btn-hover(#fff,#000);
+}
+.btn-ar-orange{
+    @include btn-arrow(#E8160D);
+}
+.btn-bracket-orange{
+    overflow: hidden;
+    position: relative;
+    &:hover{
+        background: -webkit-gradient(linear, right top, left bottom, from(#FDCB08), to(#EE2F22));
+        background: linear-gradient(to left bottom, #FDCB08 0%, #EE2F22 100%);
+        color: #fff;
+        span{
+            margin-left: -2vw;
+        }
+        span:before{
+            height: 1.2vw;
+            right: 3.5vw;
+            border-color: #fff;
+        }
+        &:before{
+            right: 3.5vw;
+            border-color: #fff;
+        }
+        &:after{
+            right: 3.8vw;
+            width: 1.6vw;
+            background: #fff;
+        }
+    }
+    span{
+        margin-left: -3vw;
+        display: block;
+        @include btn-bracket(#E8160D);
+        transition: .3s;
+    }
+
+    
 }
 .btn-gray{
     border-color: #4D4948;
@@ -291,7 +375,7 @@ header{
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     z-index: -1;
 }
 .parallax-child-section img {
@@ -311,7 +395,7 @@ header{
     padding: 7.3vw 0 12vw;
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     position: relative;
     z-index: -1;
     .container{
@@ -1079,5 +1163,42 @@ footer{
         z-index: -1;
         top: -2.3vw;
         left: -2.6vw;
+    }
+}
+.product-description{
+    min-height: 10.3vw;
+    .btn{
+        color: #fff;
+        position: relative;
+        @include btn-hover(#fff,#000);
+        @include btn-arrow-hover(#000);
+        border-color: #fff;
+        &:hover{
+            span{
+                left:0;
+            }
+        }
+        &:before{
+            right: 50%;
+            width: 0.5vw;
+            border-width: 0.1vw;
+            height: 0.5vw;
+            margin-top: -0.05vw;
+        }
+        &:after{
+            right: 50%;
+            width: 0.6vw;
+            height: 0.1vw;
+        }
+        &:hover{
+            font-size: 1.1vw;
+            &:before{
+                right: 1vw;
+            }
+            &:after{
+                right: 1.2vw;
+            }
+        }
+        
     }
 }

@@ -112,7 +112,7 @@ footer = `
 
 var contact = `
 <div class="container">
-    <div class="sectionGen_contactWrap">
+    <div class="sectionGen_contactWrap font-poppins">
         <div class="sectionGen_contactForm">
             <h2 class="sectionGen_contactFormTitle">Contact us</h2>
             <p class="sectionGen_contactFormDesc">Feel free to contact us any time. We will get back to you as<br>soon as we can!</p>
@@ -136,7 +136,7 @@ var contact = `
                         <textarea maxlength="120" id="textarea" rows="3" id="contactMessage" placeholder="Message"></textarea>
                         <span class="form-group-txt-hover">Message</span>
                     </div>
-                    <button type="submit" class="btn btn-block btn-orange">SENT NOW</button>
+                    <button type="submit" class="btn btn-block btn-orange btn-bracket-orange btn-ar-orange"><span>SENT NOW</span></button>
                 </div>
               </form>
         </div>
