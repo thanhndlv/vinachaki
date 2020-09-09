@@ -1368,7 +1368,7 @@ footer {
       font-size: 5.625vw;
       padding-left: 3.125vw;
       text-indent: -3.125vw; }
-    .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo {
+    .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo2, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo {
       width: 100%;
       margin-top: 8.3vw;
       background-color: #C1272D;
@@ -1376,18 +1376,18 @@ footer {
       display: flex;
       justify-content: space-between;
       padding: 0.78125vw; }
-      .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol {
+      .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo2 .introInfoCol2, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo2 .introInfoCol, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol2, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol {
         display: flex;
         width: 13.3vw;
         border-right: 1px solid #ffffff;
         margin-right: 0.8vw; }
-        .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol:last-child {
+        .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo2 .introInfoCol2:last-child, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo2 .introInfoCol:last-child, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol2:last-child, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol:last-child {
           border: none;
           margin-right: 0; }
-        .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol .boxInfo {
+        .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo2 .introInfoCol2 .boxInfo, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo2 .introInfoCol .boxInfo, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol2 .boxInfo, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol .boxInfo {
           display: flex;
           align-items: center; }
-          .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol .boxInfo .text {
+          .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo2 .introInfoCol2 .boxInfo .text, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo2 .introInfoCol .boxInfo .text, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol2 .boxInfo .text, .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol .boxInfo .text {
             color: #ffffff;
             line-height: 1.2;
             padding-left: 1vw;
@@ -1396,6 +1396,7 @@ footer {
       width: auto;
       flex-direction: column; }
       .headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol {
+        width: 13.3vw;
         margin: 0 0 1vw;
         border: none;
         padding: 0 0 1vw;

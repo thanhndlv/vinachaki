@@ -573,7 +573,7 @@ min-height: 10.4vw;
             text-indent: -3.125vw;
           }
         }
-        .headerProductDetailsBoxRight_introInfo{
+        .headerProductDetailsBoxRight_introInfo2,.headerProductDetailsBoxRight_introInfo{
           width: 100%;
           margin-top: 8.3vw;
           background-color:#C1272D;
@@ -581,7 +581,8 @@ min-height: 10.4vw;
           display: flex;
           justify-content: space-between;
           padding: 0.78125vw;
-          .introInfoCol{
+          
+          .introInfoCol2, .introInfoCol{
             display: flex;
             width: 13.3vw;
             border-right: 1px solid #ffffff;
@@ -592,8 +593,7 @@ min-height: 10.4vw;
             }
             .boxInfo{
               display: flex;
-              align-items: center;
-              
+              align-items: center;  
               .text{
                 color: #ffffff;
                 line-height: 1.2;
@@ -608,6 +608,7 @@ min-height: 10.4vw;
           width: auto;
           flex-direction: column;
           .introInfoCol{
+            width: 13.3vw;
             margin: 0 0 1vw;
             border: none;
             padding: 0 0 1vw;
