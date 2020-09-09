@@ -4,7 +4,7 @@
 header .navbar .navbar-nav{
     font-size: inherit;
 }
-h1{
+h1,h1 span{
     font-size: 2.5rem!important;
     line-height: 1!important;
 }
@@ -19,16 +19,19 @@ h2 span,h2,
 }
 
 p,span,.btn_txtChange,.btn_bestsell,.btn-block,
-footer .footer_menu .footer_menuItem ul a{
+footer .footer_menu .footer_menuItem ul a,
+h3,h4{
     font-size: 1rem!important;
     line-height: 1.5!important;
 }
 .btn-block,.index_sectionCategory .btn-block{
     width: 100%;
 }
-.index_sectionSlideWrap,
-.index_sectionWhyChooseUs .index_sectionWhyChooseUsWrap{
+.index_sectionSlideWrap{
     flex-direction: column;
+}
+.index_sectionWhyChooseUs .index_sectionWhyChooseUsWrap{
+    flex-wrap: wrap;
 }
 .index_sectionSlide .index_sectionSlide_intro,
 .index_sectionSlide .index_sectionSlide_slide{
@@ -46,7 +49,6 @@ footer .footer_menu .footer_menuItem ul a{
     width: 20px;
     height: 100%;
 }
-.index_sectionWhyChooseUs .index_sectionWhyChooseUs_item,
 .index_sectionCategory .index_sectionCategory_categogyItem{
     max-width:100%;
     flex: 0 0 100%;
@@ -54,11 +56,18 @@ footer .footer_menu .footer_menuItem ul a{
     margin: 0 0 20px;
     width: 100%;
 }
+.index_sectionWhyChooseUs .index_sectionWhyChooseUs_item{
+    flex: 0 0 48%;
+    max-width: 48%;
+}
+.index_sectionWhyChooseUs .index_sectionWhyChooseUs_item h2{
+    font-size: 1rem!important;
+}
 .index_sectionCategory .index_sectionCategory_categogy{
     width: 100%;
 }
 .index_sectionWhyChooseUs .index_sectionWhyChooseUs_item .index_sectionWhyChooseUs_itemIcon{
-    height: auto;
+    height: 65px;
 }
 .index_sectionCategory .index_sectionCategoryWrap,
 .index_sectionCategory .index_sectionCategory_categogy,
@@ -76,8 +85,11 @@ footer .footer_menu .footer_menuItem ul a{
     text-align: center;
 }
 .index_sectionCategory .index_sectionCategory_categogyItem .index_sectionCategory_categogyItemNum{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem!important;
+    top: 10px;
+    left: 10px;
 }
 .index_sectionAboutUs{
     padding: 20px 0;
@@ -125,6 +137,7 @@ footer .footer_menu .footer_menuItem ul a{
 .sectionGen_contact .sectionGen_contactForm .form-group input[type="text"], .sectionGen_contact .sectionGen_contactForm .form-group input[type="email"]{
     height: auto;
     padding: .375rem .75rem;
+    font-size: 1rem;
 }
 .sectionGen_contact .sectionGen_contactForm .form-group textarea{
     height: 90px;
@@ -136,7 +149,7 @@ footer .footer_menu .footer_menuItem ul a{
 .sectionGen_contact .sectionGen_contactForm .form-group{
     margin: 0 0 20px;
 }
-.sectionGen_contact .sectionGen_contactForm, .sectionGen_contact .sectionGen_contactIntroduce,
+.sectionGen_contact .sectionGen_contactForm,
 .sectionGen_contact .sectionGen_contactIntroduce .sectionGen_contactIntroduceItem{
     margin: 0 0 20px;
 }
@@ -145,6 +158,7 @@ footer .footer_menu .footer_menuItem ul a{
     text-align: center;
 }
 .sectionGen_contact .sectionGen_contactIntroduce{
+    border-radius: 10px;;
     padding: 20px;
 }
 footer .footerWrap,
@@ -177,6 +191,9 @@ footer .footer_menu .footer_menuItem ul ul a{
 .index_sectionCategory .index_sectionCategory_content .index_sectionCategory_contentDesc{
     margin: 0 0 20px;
 }
+.index_sectionSlide{
+    padding: 30px 0;
+}
 .index_sectionWhyChooseUs,
 .index_sectionCategory{
     padding: 30px 0;
@@ -190,4 +207,604 @@ footer .footer_menu .footer_menuItem ul ul a{
 .index_sectionCategory .index_sectionCategory_categogyItem ul ul a{
     margin: 0 0 15px;
     font-size: 1.5rem!important;
+}
+
+/* end index */
+
+.wcu_section1{
+    padding: 30px 0;
+}
+
+.wcu_section1 .wcu_section1Wrap{
+    flex-direction: column;
+}
+
+.wcu_section1 .wcu_section1Img,.wcu_section1 .wcu_section1Content,
+.wcu_section2 .wcu_section2Content,
+.wcu_section2 .wcu_section2Img{
+    width: 100%;
+}
+.wcu_section2 .wcu_section2Img{
+    position: static;
+}
+
+.wcu_section2 .wcu_section2ContentTitle:before{
+    display: none;
+}
+
+.wcu_section1 .wcu_section1Img,.wcu_section1 .wcu_section1ContentTitle{
+    margin: 0 0 20px;
+}
+.wcu_section1Content{
+    text-align: center;
+}
+
+.wcu_section2 .wcu_section2ContentList .wcu_section2ContentListItem{
+    margin: 0 10px;
+}
+
+.wcu_section2 .wcu_section2ContentList img{
+    height: 25px;
+}
+
+.wcu_section2 .wcu_section2ContentList .wcu_section2ContentListItem:not(:last-child):before{
+    right: -10px;
+    top: 0;
+    bottom: 0;
+}
+.wcu_section2 .wcu_section2ContentList{
+    padding: 10px 0;
+}
+.wcu_section2 .wcu_section2ContentDesc{
+    margin: 0 0 20px;
+}
+.wcu_section2{
+    padding: 30px 0;
+}
+.wcu_section2Content{
+    text-align: center;
+}
+.wcu_section2Content .d-flex{
+    justify-content: center;
+}
+
+.wcu_section3 .wcu_section3List,
+.wcu_section3 .wcu_section3List .wcu_section3ListItem,
+.wcu_section3 .wcu_section3Title{
+    width: 100%;
+}
+.wcu_section3 .wcu_section3Wrap{
+    flex-direction: column-reverse;
+}
+.wcu_section3 .wcu_section3List .wcu_section3ListItemDesc{
+    padding: 0;
+}
+.wcu_section3 .wcu_section3List .wcu_section3ListItemImg{
+    min-height: auto;
+    margin: 0 0 15px;
+}
+.wcu_section3 .wcu_section3List .wcu_section3ListItemTitle{
+    margin: 0 0 15px;
+}
+.wcu_section3 .wcu_section3List .wcu_section3ListItem{
+    margin: 0 0 20px;
+}
+.wcu_section3 .wcu_section3Title::before{
+    display: none;
+}
+.wcu_section3 .wcu_section3Title{
+    margin: 0 0 20px;
+}
+.wcu_section3 .wcu_section3Title span{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.wcu_section3{
+    padding: 30px 0;
+}
+
+.wcu_section4 .wcu_section4Title{
+    margin: 0 0 20px;
+    text-align: center;
+}
+.wcu_section4{
+    padding: 30px 0;
+}
+.wcu_section4 .wcu_section4ListSub{
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+.wcu_section4 .wcu_section4ListItem{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.wcu_section4 .wcu_section4ListItemTitle{
+    text-align: center;
+}
+.wcu_section4 .wcu_section4ListItemTitle{
+    font-size: 1rem!important;
+}
+.wcu_section4 .wcu_section4ListItemImg{
+    margin: 0 0 15px;
+}
+.wcu_section4 .wcu_section4ListItem{
+    margin: 0 0 20px;
+}
+.wcu_section4 .wcu_section4ListItemNum{
+    width: 30px;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+}
+.wcu_section4 .wcu_section4ListSub:before,
+.wcu_section4 .wcu_section4ListSub:after{
+    display: none;
+}
+.wcu_section4 .wcu_section4ListItem{
+    padding: 0 0 0 40px;
+}
+.wcu_section4List{
+    position: relative;
+}
+.wcu_section4List::after{
+    content: "";
+    left: 13px;
+    width: 3px;
+    position: absolute;
+    background: #C72E09;
+    bottom: 6%;
+    top: 5%;
+}
+
+.productRecom .row{
+    flex-direction: column;
+    margin: 0;
+}
+.productRecom .boxInfo{
+    max-width: 100%;
+    flex: 0 0 100%;
+    margin: 0 0 20px;
+}
+.productRecom .boxInfo .boxText h4{
+    font-size: 1rem;
+}
+.productRecom{
+    padding: 30px 0;
+}
+.sectionGen_contact{
+    padding: 30px 0;
+}
+.contact_sectionContact{
+    position: relative;
+    padding: 0;
+}
+/* why choose us */
+
+.contact_sectionContact .contact_sectionContactMap{
+    position: relative;
+    height: 350px;
+    margin: 0 0 20px;
+}
+.contact_sectionContact{
+    height: auto;
+}
+.contact_sectionContact .container{
+    height: auto;
+}
+.contact_sectionContact .sectionGen_contactForm .btn-block{
+    width: auto;
+}
+.contact_sectionQuick .contact_sectionQuick_quickSupportList{
+    flex-direction: column;
+}
+.contact_sectionQuick .contact_sectionQuick_quickSupportList .contact_sectionQuick_quickSupportListItem{
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    margin: 0 0 20px;
+    border-radius: 10px;
+}
+.contact_sectionQuick .contact_sectionQuick_quickSupportList .contact_sectionQuick_quickSupportListItemIcon{
+    width: auto;
+}
+.contact_sectionQuick .contact_sectionQuick_quickSupportList .contact_sectionQuick_quickSupportListItemTitle{
+    font-size: 1rem;
+    margin: 0 0 15px;
+}
+.contact_sectionQuick .contact_sectionQuick_quickSupportList .contact_sectionQuick_quickSupportListItemIcon{
+    margin: 0 0 15px;
+}
+.sectionGen_contact .sectionGen_contactForm .d-flex{
+    flex-direction: column;
+}
+.contact_sectionQuick .sectionGen_contact .sectionGen_contactForm .form-group{
+    width:100%;
+    margin: 0 0 20px;
+}
+.contact_sectionQuick .btn-block{
+    width: auto;
+}
+.contact_sectionQuick .sectionGen_contact .sectionGen_contactForm .form-group input[type="text"], .contact_sectionQuick .sectionGen_contact .sectionGen_contactForm .form-group input[type="email"]{
+    padding: .375rem .75rem;
+}
+.contact_sectionContact .sectionGen_contactForm{
+    margin: 0;
+}
+.contact_sectionContact,{
+    padding: 0 0 30px;
+}
+.contact_sectionQuick{
+    padding: 30px 0 0;
+}
+/* end contact */
+
+
+.productItems .header{
+    width: auto;
+    height: auto;
+    left:auto;
+    transform:none;
+    margin: 0 0 20px;
+}
+.product-grid{
+    max-width: 100%;
+    margin: 0;
+}
+.productItems .col-md-4:not(:last-child){
+    margin: 0 0 20px;
+}
+.product-description h3{
+    margin: 15px 0;
+}
+.product-description a{
+    margin: 0 0 15px;
+    font-size: 1rem;
+}
+.heading-2{
+    transform: none;
+    left: auto;
+    top: auto;
+}
+.productItems .header img{
+    display: none;
+}
+.pos{
+    left:0;
+    transform:none;
+}
+.pos .row .col-4:first-child .col-items,
+.pos .row .col-4 .col-items{
+    margin: 0;
+}
+.pos .row .col-4{
+    display: flex;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+}
+.pos .row .col-4{
+    margin: 0 0 15px;
+}
+.pos .row{
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.pos .col-items{
+    width: 100%;
+    padding: 20px;
+}
+.pos .col-items .ContentGeneralSpecification .smallImg{
+    width: auto;
+}
+.pos .col-items .contentImg p{
+    margin: 0;
+}
+.pos .col-items .ContentGeneralSpecification .smallImg{
+    margin: 0 20px 0 0;
+}
+.productItems .bg4 .heading-bg{
+    transform: none;
+    left: auto;
+    top: auto;
+}
+.d-none-sp{
+    display: none!important;
+}
+.productItems .productItemsPacking h3 img{
+    width: 20px;
+}
+.col-bag{
+    align-self: stretch;
+    flex: 0 0 100%;
+    max-width: 100%;
+    position: relative;
+}
+.col-bag .circle-number{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.col-img-bag img{
+    height: auto;
+}
+.col-bag .circle-number span{
+    padding:0;
+}
+.productItemsDelivery .justify-content-start{
+    flex-direction: column;
+    margin: 0!important;
+}
+.productItemsDelivery .col-6{
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0;
+    margin: 0 0 15px;
+}
+.col-6 .Delivery .smallImg{
+    width: 40px;
+}
+.col-6 .Delivery .contentImg,
+.col-6 .Delivery .DeliveryContentImg{
+    width: calc(100% - 45px);
+}
+.col-6 .Delivery{
+    justify-content: space-between;
+}
+.productItems{
+    padding: 30px 0 1px;
+}
+.heading{
+    top: auto;
+    left: auto;
+    transform: none;
+}
+.productItems .col-md-4{
+    padding: 0;
+}
+.productItems .row{
+    margin: 0;
+}
+.productItems .container{
+    margin: 0 auto 30px;
+}
+/* end our product */
+
+.faq h2{
+    margin: 0 0 20px;
+}
+.faq .boxFAQ .number .circle{
+    width: 30px;
+    height: 30px;
+    font-size: 1rem;
+}
+.faq{
+    padding: 30px 0;
+}
+.faq .boxFAQ{
+    padding: 10px;
+    margin: 0 0 15px;
+}
+/* end faq */
+
+
+.headerProductDetails{
+    padding: 30px 0;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxLeft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.headerProductDetailsWrap{
+    flex-wrap: wrap;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxLeft .headerProductDetails_video{
+    width: 100%;
+    height: 300px;
+    
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxLeft .headerProductDetails_video iframe{
+    height: 100%;
+    width: 100%;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxLeft .headerProductDetails_info .list{
+    width: 100%;
+    margin: 20px 0;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxLeft .headerProductDetails_info .list li{
+    width: 20%;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .headerProductDetailsBoxRight_introTitle{
+    padding:0;
+    text-indent: unset;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight,
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .text,
+.headerProductKind .headerProductKindLeft,
+.headerProductKind .headerProductKindRight,
+.contentWoods .contentWoodsBox .contentWoodsLeft,
+.contentWoods .contentWoodsBox .contentWoodsRight,
+.contentWoods .contentWoodsBox .contentWoodsLeft_img,
+.contentWoods .contentWoodsBox .contentWoodsRight_text{
+    width: 100%;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro{
+    width:100%;
+    margin: 0 0 20px;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_boxImg{
+    display: none;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .text{
+    padding: 0;
+}
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro{
+    text-align:center;
+    margin: 0;
+}
+.headerProductKind .headerProductKindWrap{
+    display: flex;
+    flex-direction: column;
+}
+.headerProductKind .headerProductKindRight{
+    height: auto;
+}
+.headerProductKind .headerProductKindLeft{
+    padding: 0;
+    margin: 0 0 20px;
+}
+.headerProductKind .headerProductKindLeft .headerProductKindLeft_box{
+    padding: 10px;
+}
+.headerProductKind{
+    padding: 30px 0;
+}
+.contentWoods{
+    padding: 30px 0;
+}
+.contentWoods .contentWoodsTitle{
+    text-align: center;
+    margin:0 0 20px;
+}
+.contentWoods .contentWoodsBox{
+    margin: 0 0 20px;
+    flex-direction: column;
+}
+.contentWoods .contentWoodsBox:last-child{
+    margin: 0;
+}
+.contentWoods .contentWoodsBox .contentWoodsRight,
+.contentWoods .contentWoodsBox .contentWoodsLeft,
+.contentWoods .contentWoodsBox .contentWoodsLeft_img,
+.contentWoods .contentWoodsBox .contentWoodsRight_text{
+    position: static;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+.contentWoods .contentWoodsBox .contentWoodsLeft,
+.contentWoods .contentWoodsBox .contentWoodsRight_text{
+    padding: 10px;
+}
+.contentWoods .contentWoodsBox .contentWoodsLeft .btnDetail,
+.contentWoods .contentWoodsBox .contentWoodsRight_text .btnDetail{
+    position: static;
+    font-size: 1rem;
+    width: auto;
+    border: 1px solid;
+}
+.contentWoods .contentWoodsBox .contentWoodsLeft .contentWoodsLeftTitle{
+    font-weight: bold;
+}
+.contentWoods .contentWoodsBox:nth-child(odd){
+    flex-direction: column-reverse;
+    display: flex;
+}
+
+.headerProductDetails.detail2 .container .headerProductDetailsBoxLeft.detail2{
+    width:100%;
+}
+.detail2 .headerProductDetailsWrap{
+    flex-direction: column;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxLeft.detail2 .headerProductDetails_info .list li{
+    width: 23%;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxLeft.detail2 .headerProductDetails_info .list{
+    margin: 20px 0;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2{
+    width: 100%;
+    margin: 0;
+    text-indent: unset;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo{
+    margin: 20px 0 0;
+    flex-wrap: wrap;
+    padding:10px;
+    width: 100%;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol{
+    width: 100%;
+    border:none;
+    padding: 0 0 10px;
+    margin: 0 0 10px;
+    border-bottom: 1px solid #fff;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol:last-child{
+    margin: 0;
+    padding: 0;
+}
+
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol .boxInfo .text{
+    width: calc(100% - 55px);
+    text-align: left;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfo .introInfoCol .boxInfo{
+    width:100%;
+    justify-content: space-between;
+}
+.seeAlso{
+    padding: 30px 0;
+    text-align: center;
+}
+.seeAlso .seeAlsoInner .seeAlsoInner_box .seeAlsoInner_boxInfo{
+    width: 100%;
+    flex-direction: column;
+    padding: 10px;
+    margin: 0 0 20px;
+}
+.seeAlso .seeAlsoInner .seeAlsoInner_box .seeAlsoInner_boxInfo:last-child{
+    margin:0;
+}
+.seeAlso .seeAlsoInner .seeAlsoInner_box .seeAlsoInner_boxInfo .boxInfoImg{
+    width: 100%;
+    margin: 0 0 15px;
+}
+.seeAlso .seeAlsoInner .seeAlsoInner_box .seeAlsoInner_boxInfo .boxInfoText{
+    width: 100%;
+    height: auto;
+}
+.seeAlso .seeAlsoInner .seeAlsoInner_box{
+    flex-wrap: wrap;
+}
+.headerProductDetailsBoxRight_introInfoWrapPar{
+    flex-direction: column;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfoWrap:nth-child(1),
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introInfoWrap:last-child{
+    margin: 0 0 20px;
+}
+.headerProductDetails.detail2 .container .headerProductDetailsBoxRight.detail2 .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .headerProductDetailsBoxRight_introTitle{
+    text-indent: unset;
+    padding: 0;
+    margin: 0 0 20px;
+}
+/*product detail*/
+
+.navbar-logo{
+    height: 60px;
+}
+.navbar-logo img{
+    height: 100%;
+    width: auto;
+}
+button:focus{
+    outline:none;
+}
+.index_sectionSlide .index_sectionSlide_intro .d-flex{
+    justify-content: center;
 }
