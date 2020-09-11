@@ -116,24 +116,24 @@ var contact = `
         <div class="sectionGen_contactForm">
             <h2 class="sectionGen_contactFormTitle">Contact us</h2>
             <p class="sectionGen_contactFormDesc">Feel free to contact us any time. We will get back to you as<br>soon as we can!</p>
-            <form id="contactGen" method="POST" action="">
+            <form id="contactGen" class="contactGen" name="contactGen" method="POST" action="">
                 <div class="d-flex">
                     <div class="form-group">
-                        <input type="text" class="form-control" id="contactName" placeholder="Name">
+                        <input type="text" class="form-control" name="contactName" id="contactName" placeholder="Name">
                         <span class="form-group-txt-hover">Name</span>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" id="contactPhone" placeholder="Phone">
+                        <input type="text" class="form-control" name="contactPhone" id="checkPhone" placeholder="Phone">
                         <span class="form-group-txt-hover">Phone</span>
                     </div>
                     <div class="form-group">
-                        <input type="email" class="form-control" id="contactEmail" placeholder="Email address">
+                        <input type="email" class="form-control" name="contactEmail" id="contactEmail" placeholder="Email address">
                         <span class="form-group-txt-hover">Email address</span>
                     </div>
                 </div>
                 <div class="d-flex">
                     <div class="form-group">
-                        <textarea maxlength="120" id="textarea" rows="3" id="contactMessage" placeholder="Message"></textarea>
+                        <textarea maxlength="120" id="textarea" name="contactMessage" rows="3" id="contactMessage" placeholder="Message"></textarea>
                         <span class="form-group-txt-hover">Message</span>
                     </div>
                     <button type="submit" class="btn btn-block btn-orange btn-bracket-orange btn-ar-orange"><span>SENT NOW</span></button>
@@ -225,3 +225,60 @@ if($('#layout-ourProduct').length > 0){
     $('#layout-ourProduct').html(ourProduct);
 }
 
+$(document).ready(function(){
+
+    function sendForm() {
+        
+        let data = $('#contactGen,#formPageContact,#download').serialize();
+
+        $.ajax({
+            url: 'https://script.google.com/macros/s/AKfycbylFAgFtpgRX9TJfvw61lsVJuwiFWLen2hT3gqPBgxBx5mm4h9g/exec',
+            method: 'GET',
+            dataType: 'json',
+            data: data,
+            success: function(responseData, textStatus, jqXHR) {
+                alert('chúng tôi sẽ phản hồi bạn sớm nhất!');
+            },
+            error: function(jqXHR, textStatus, errorThrown) {
+
+            }
+        });
+    
+        return true;
+    };
+
+    
+    $(document).on('change','#checkPhone',function(){
+        var regex = /(03|08|09|01[2|6|8|9])+([0-9]{8})\b/,
+        value = $(this).val();
+        if(!value.match(regex)){
+            alert('vui lòng nhập lại số điện thoại!');
+        }
+    });
+    
+    $('#contactGen button,#formPageContact button').on('click',function(e){
+        e.preventDefault();
+        var regex = /(03|08|09|01[2|6|8|9])+([0-9]{8})\b/,
+        flag = false,
+        flagPhone = false,
+        value = $(this).parents('form').find('#checkPhone').val();
+        $(this).parents('form').find('.form-group').each(function(index){
+            if($(this).find('input,textarea').val() == ''){
+                flag = true;
+                return false;
+            }
+        });
+        if(!value.match(regex)){
+            flagPhone = true;
+        }
+        if(flag == true || flagPhone == true){
+            if(flag == true){
+                alert('vui lòng nhập đẩy đủ các trường');
+            }else{
+                alert('vui lòng nhập lại số điện thoại!');
+            }
+        }else{
+            sendForm();
+        }
+    });
+})

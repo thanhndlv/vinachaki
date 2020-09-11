@@ -560,8 +560,9 @@ header{
         border-radius: 1.5vw;
         margin: 0 0 1vw;
         border: 5px solid #FAAD0D;
+        height: 14vw;
         .index_sectionCategory_categogyItemLink{
-            padding: 2vw 0 1.1vw;
+            padding: 1vw 0 1.1vw;
         }
         .index_sectionCategory_categogyItemImg{
             width: 11.3vw;
@@ -706,7 +707,7 @@ header{
                 padding: 0 2vw;
             }
         }
-        #contactGen{
+        .contactGen{
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
