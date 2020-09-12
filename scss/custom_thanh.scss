@@ -226,9 +226,12 @@
     position: absolute;
     right: 0;
     display: flex;
+    top: 0;
+    bottom: 0;
     & img {
       width: 100%;
       height: auto;
+      object-fit: cover;
     }
   }
 }
@@ -361,7 +364,7 @@
   position: relative;
   display: block;
   background-color: #F4F4F4;
-  padding-bottom: 20.3125vw;
+  padding-bottom: 2vw;
   & .col-md-4 {
     text-align: center;
     display: flex;
@@ -663,6 +666,7 @@ min-height: 10.4vw;
         display: flex;
         justify-content: space-between;
         .seeAlsoInner_boxInfo{
+          cursor: pointer;
           display: flex;
           justify-content: space-between;
           width: 41.1vw;
@@ -702,9 +706,11 @@ min-height: 10.4vw;
       color: #ffffff;
       border-radius: 1.5vw;
       vertical-align: middle;
+      overflow: hidden;
       .table-responsive{
         .table{
           margin: 0;
+          font-size: 1vw;
           th:nth-of-type(1){
             width: 18.2vw;
           }
@@ -747,6 +753,17 @@ min-height: 10.4vw;
             overflow: hidden;
             min-height: 6.25vw;
             padding: 0;
+            &:before{
+              content: "";
+              left: -2vw;
+              right: -2vw;
+              height: 1px;
+              background: #000000;
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%) rotate(19deg);
+              margin: 0.2vw 0 0 0;
+            }
             .tt1{
               position: absolute;
               right: 1vw;

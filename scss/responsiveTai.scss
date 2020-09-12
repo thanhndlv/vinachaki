@@ -840,3 +840,23 @@ button:focus{
 .index_sectionSlide .index_sectionSlide_intro .d-flex{
     justify-content: center;
 }
+
+.Specification .container .tabInfo .table-responsive .table .header .infoTitle:before{
+    left: -30px;
+    right: -30px;
+    transform: translateY(-50%) rotate(41deg);
+    margin: 0 0 0 0;
+}
+.Specification .table-responsive{
+    overflow-x: auto;
+}
+.Specification .container .tabInfo .table-responsive .table{
+    min-width:900px;
+    font-size: 1rem;
+}
+.Specification .container .tabInfo .table-responsive .table .header .infoTitle{
+    height: 150px;
+}
+.btn-ar-orange:before,.btn-ar-orange:after,.btn-ar-orange span:before{
+    display: none;
+}
