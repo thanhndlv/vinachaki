@@ -86,7 +86,6 @@ footer = `
                         <ul>
                             <li><a href="">Gmail</a></li>
                             <li><a href="">Facebook</a></li>
-                            <li><a href="">Softwood charcoal</a></li>
                             <li><a href="">Instagram</a></li>
                             <li><a href="">Tik Tok</a></li>
                         </ul>
@@ -136,7 +135,7 @@ var contact = `
                         <textarea maxlength="120" id="textarea" name="contactMessage" rows="3" id="contactMessage" placeholder="Message"></textarea>
                         <span class="form-group-txt-hover">Message</span>
                     </div>
-                    <button type="submit" class="btn btn-block btn-orange btn-bracket-orange btn-ar-orange"><span>SENT NOW</span></button>
+                    <button type="submit" class="btn btn-block btn-orange btn-bracket-orange btn-ar-orange"><span>SEND NOW</span></button>
                 </div>
               </form>
         </div>
