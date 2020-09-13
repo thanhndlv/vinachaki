@@ -181,27 +181,27 @@ var ourProduct = `
     <div class="row">
         <div class="col-4 boxInfo">
             <div class="boxImg">
-                <a href="`+linkHref+`product/hardwood-charcoal.html"><img src="`+linkHref+`assets/images/contact/product1.jpg" alt="Hardwood Charcoal"></a>
+                <a href="`+linkHref+`products/hardwood-charcoal.html"><img src="`+linkHref+`assets/images/contact/product1.jpg" alt="Hardwood Charcoal"></a>
                 
             </div>
             <div class="boxText">
-                <a href="`+linkHref+`product/hardwood-charcoal.html"><h4>Hardwood Charcoal</h4></a>
+                <a href="`+linkHref+`products/hardwood-charcoal.html"><h4>Hardwood Charcoal</h4></a>
             </div>
         </div>
         <div class="col-4 boxInfo">
             <div class="boxImg">
-                <a href="`+linkHref+`product/softwood-charcoal.html"><img src="`+linkHref+`assets/images/contact/product2.jpg" alt="Softwood Charcoal"></a>
+                <a href="`+linkHref+`products/softwood-charcoal.html"><img src="`+linkHref+`assets/images/contact/product2.jpg" alt="Softwood Charcoal"></a>
             </div>
             <div class="boxText">
-                <a href="`+linkHref+`product/softwood-charcoal.html"><h4>Softwood Charcoal</h4></a>
+                <a href="`+linkHref+`products/softwood-charcoal.html"><h4>Softwood Charcoal</h4></a>
             </div>
         </div>
         <div class="col-4 boxInfo">
             <div class="boxImg">
-                <a href="`+linkHref+`product/mixed-wood-harcoal.html"><img src="`+linkHref+`assets/images/contact/product3.jpg" alt="Mixed wood Charcoal"></a>
+                <a href="`+linkHref+`products/mixed-wood-harcoal.html"><img src="`+linkHref+`assets/images/contact/product3.jpg" alt="Mixed wood Charcoal"></a>
             </div>
             <div class="boxText">
-                <a href="`+linkHref+`product/mixed-wood-harcoal.html"><h4>Mixed wood Charcoal</h4></a>
+                <a href="`+linkHref+`products/mixed-wood-harcoal.html"><h4>Mixed wood Charcoal</h4></a>
             </div>
         </div>
     </div>
