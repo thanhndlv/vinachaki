@@ -110,6 +110,7 @@
             list-style: none;
           }
         }
+        
       }
     }
     .headerProductDetailsBoxRight {
@@ -129,11 +130,11 @@
           .text {
             font-size: 1.825vw;
             color: #616467;
-            width: 33.8541vw;
             line-height: 1.285;
-            padding-left: 6.25vw;
+            padding: 3.6vw;
             position: relative;
-            margin-top: 4.1vw;
+            border: 6px solid #D13A17;
+
           }
           .text:before{
             background: url(../images/product/icon_quote.png) no-repeat;
@@ -142,35 +143,33 @@
             min-height: 3.125vw;
             position: absolute;
             background-size: 100%;
-            left: 2.6vw;
-            top: -1.4vw;
+            left: 0.2vw;
+            top: 2.3vw;
           }
-          .text:after{
-            border: 6px solid #D13A17;
-            content: "";
-            width: 20.2vw;
-            height: 19.375vw;
-            position: absolute;
-            top: -6vw;
-            left: 0;
-            z-index: -1;
-          }
-          .box{
-            display: flex; 
-            flex-direction: row-reverse;
+          // .text:after{
+          //   border: 6px solid #D13A17;
+          //   content: "";
+          //   width: 20.2vw;
+          //   height: 19.375vw;
+          //   position: absolute;
+          //   top: -6vw;
+          //   left: 0;
+          //   z-index: -1;
+          // }
             .list2{
               display: flex;
               justify-content: space-between;
               text-align: center;
               width: 21.9vw;
-              
+              padding: 0;
+              margin: 1vw auto;
               li {
                 list-style: none;
                 width: 5.785vw;
+                justify-content: center;
+                font-size: 0.8vw;
               }
             }
-          }
-          
         }
         .headerProductDetailsBoxRight_boxImg {
           width: 20.15625vw;
@@ -565,10 +564,15 @@ min-height: 10.4vw;
         width: 100%;
         .list {
           width: 100%;
-          margin: 3.125vw auto 7.3vw;
+          margin: 1vw auto 7.3vw;
           li {
               width: 10.7vw;
           } 
+        }
+        .list.col3{
+          li{
+            width: 15vw;
+          }
         }
       }
     }

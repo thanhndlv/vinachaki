@@ -1,10 +1,14 @@
 .headerProductDetailsBoxRight_introText .text:after , .headerProductDetailsBoxRight_introText .text:before{
  display: none;
 }
-.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .box .list2 li{
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .text{
+border: none;
+font-size: 1rem;
+   }
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .text .list2 li{
     width: 30%;
 }
-.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .box .list2{
+.headerProductDetails .headerProductDetailsWrap .headerProductDetailsBoxRight .headerProductDetailsBoxRight_intro .headerProductDetailsBoxRight_introText .text .list2{
     width: 100%;
     display: flex;
     flex-direction: row;
