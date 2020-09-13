@@ -56,10 +56,20 @@
     text-align: center;
     margin-bottom: 5.5vw;
   }
+  .product-item{
+    padding: 0 3vw;
+  }
+  .slick-prev:before, .slick-next:before{
+    color: #fff;
+    background: #000;
+    padding: 10px;
+  }
+  .slick-prev, .slick-next{
+    z-index: 99;
+  }
   .boxInfo {
-    flex: 0 0 28%;
-    max-width: 28%;
-    margin: 0 6.8vw 0 0;
+    flex: 0 0 100%;
+    max-width: 100%;
     text-align: center;
     background-color: #24282d;
     padding: 0;

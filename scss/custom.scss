@@ -56,6 +56,14 @@ header{
         }
         .navbar-nav{
             font-size: 1.1vw;
+            li{
+                position: relative;
+                &:hover{
+                    .dropdown-menu{
+                        display: block;
+                    }
+                }
+            }
         }
         a.nav-link{
             color: #fff;

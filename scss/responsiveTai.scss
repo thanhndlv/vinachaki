@@ -860,3 +860,20 @@ button:focus{
 .btn-ar-orange:before,.btn-ar-orange:after,.btn-ar-orange span:before{
     display: none;
 }
+
+.productRecom .slick-prev, .productRecom .slick-next{
+    bottom: 0;
+    top: auto;
+}
+.productRecom .slick-list{
+    padding: 0 0 50px;
+}
+.productRecom .slick-next{
+    right: calc( 50% - 40px );
+}
+.productRecom .slick-prev{
+    left: calc( 50% - 40px );
+}
+header .navbar .navbar-nav li:hover .dropdown-menu{
+    display: none;
+}

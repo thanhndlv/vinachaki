@@ -28,7 +28,18 @@ var header = `
                     <a class="nav-link" href="`+linkHref+`why-choose-us.html">WHY CHOOSE US?</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="`+linkHref+`products/our-product.html">PRODUCTS</a>
+                    <a href="`+linkHref+`products/our-product.html"
+                    class="nav-link ">
+                    PRODUCTS
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="`+linkHref+`products/white-charcoal.html">White Charcoal</a>
+                        <a class="dropdown-item" href="`+linkHref+`products/hardwood-charcoal.html">Hardwood Charcoal</a>
+                        <a class="dropdown-item" href="`+linkHref+`products/softwood-charcoal.html">Softwood Charcoal</a>
+                        <a class="dropdown-item" href="`+linkHref+`products/mixed-wood-charcoal.html">Mixed wood Charcoal</a>
+                        <a class="dropdown-item" href="`+linkHref+`products/coconut-charcoal.html">Coconut Charcoal</a>
+                        <a class="dropdown-item" href="`+linkHref+`products/sawdust-charcoal.html">Sawdust Charcoal</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="`+linkHref+`faq.html">FAQ</a>
@@ -179,29 +190,66 @@ var ourProduct = `
 <div class="container"> 
     <h2>Our charcoal products </h2>
     <div class="row">
-        <div class="col-4 boxInfo">
-            <div class="boxImg">
-                <a href="`+linkHref+`products/hardwood-charcoal.html"><img src="`+linkHref+`assets/images/contact/product1.jpg" alt="Hardwood Charcoal"></a>
-                
-            </div>
-            <div class="boxText">
-                <a href="`+linkHref+`products/hardwood-charcoal.html"><h4>Hardwood Charcoal</h4></a>
-            </div>
-        </div>
-        <div class="col-4 boxInfo">
-            <div class="boxImg">
-                <a href="`+linkHref+`products/softwood-charcoal.html"><img src="`+linkHref+`assets/images/contact/product2.jpg" alt="Softwood Charcoal"></a>
-            </div>
-            <div class="boxText">
-                <a href="`+linkHref+`products/softwood-charcoal.html"><h4>Softwood Charcoal</h4></a>
+        <div class="product-item">
+            <div class="col-4 boxInfo">
+                <div class="boxImg">
+                    <a href="`+linkHref+`products/hardwood-charcoal.html"><img src="`+linkHref+`assets/images/contact/product1.jpg" alt="Hardwood Charcoal"></a>
+                    
+                </div>
+                <div class="boxText">
+                    <a href="`+linkHref+`products/hardwood-charcoal.html"><h4>Hardwood Charcoal</h4></a>
+                </div>
             </div>
         </div>
-        <div class="col-4 boxInfo">
-            <div class="boxImg">
-                <a href="`+linkHref+`products/mixed-wood-harcoal.html"><img src="`+linkHref+`assets/images/contact/product3.jpg" alt="Mixed wood Charcoal"></a>
+        <div class="product-item">
+            <div class="col-4 boxInfo">
+                <div class="boxImg">
+                    <a href="`+linkHref+`products/softwood-charcoal.html"><img src="`+linkHref+`assets/images/contact/product2.jpg" alt="Softwood Charcoal"></a>
+                </div>
+                <div class="boxText">
+                    <a href="`+linkHref+`products/softwood-charcoal.html"><h4>Softwood Charcoal</h4></a>
+                </div>
             </div>
-            <div class="boxText">
-                <a href="`+linkHref+`products/mixed-wood-harcoal.html"><h4>Mixed wood Charcoal</h4></a>
+        </div>
+        <div class="product-item">
+            <div class="col-4 boxInfo">
+                <div class="boxImg">
+                    <a href="`+linkHref+`products/mixed-wood-harcoal.html"><img src="`+linkHref+`assets/images/contact/product3.jpg" alt="Mixed wood Charcoal"></a>
+                </div>
+                <div class="boxText">
+                    <a href="`+linkHref+`products/mixed-wood-harcoal.html"><h4>Mixed wood Charcoal</h4></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="col-4 boxInfo">
+                <div class="boxImg">
+                    <a href="`+linkHref+`products/hardwood-charcoal.html"><img src="`+linkHref+`assets/images/contact/product1.jpg" alt="Hardwood Charcoal"></a>
+                    
+                </div>
+                <div class="boxText">
+                    <a href="`+linkHref+`products/hardwood-charcoal.html"><h4>Hardwood Charcoal</h4></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="col-4 boxInfo">
+                <div class="boxImg">
+                    <a href="`+linkHref+`products/softwood-charcoal.html"><img src="`+linkHref+`assets/images/contact/product2.jpg" alt="Softwood Charcoal"></a>
+                </div>
+                <div class="boxText">
+                    <a href="`+linkHref+`products/softwood-charcoal.html"><h4>Softwood Charcoal</h4></a>
+                </div>
+            </div>
+        </div>
+        <div class="product-item">
+            <div class="col-4 boxInfo">
+                <div class="boxImg">
+                    <a href="`+linkHref+`products/mixed-wood-harcoal.html"><img src="`+linkHref+`assets/images/contact/product3.jpg" alt="Mixed wood Charcoal"></a>
+                </div>
+                <div class="boxText">
+                    <a href="`+linkHref+`products/mixed-wood-harcoal.html"><h4>Mixed wood Charcoal</h4></a>
+                </div>
             </div>
         </div>
     </div>
@@ -222,10 +270,26 @@ if($('#layout-footer').length > 0){
 
 if($('#layout-ourProduct').length > 0){
     $('#layout-ourProduct').html(ourProduct);
+    $('#layout-ourProduct .row').slick({
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        margin: 30,
+        arrows: true,
+        responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+        ]
+    })
 }
 
 $(document).ready(function(){
 
+    
     function sendForm() {
         
         let data = $('#contactGen,#formPageContact,#download').serialize();
